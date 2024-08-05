@@ -6,6 +6,8 @@ import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import Postgres from "./icons/Postgres.astro"
 import Typescript from "./icons/TypeScript.astro"
+import React from "./icons/React.astro"
+import Vite from "./icons/Vite.astro"
 
 const TAGS = {
   NEXT: {
@@ -28,6 +30,16 @@ const TAGS = {
     class: "bg-blue-800 text-white",
     icon: Typescript,
   },
+  REACT: {
+    name: "React",
+    class: "bg-blue-800 text-white",
+    icon: React,
+  },
+  VITE: {
+    name: "Vite",
+    class: "bg-blue-800 text-white",
+    icon: Vite,
+  },
 }
 const PROJECTS = [
   {
@@ -38,6 +50,15 @@ const PROJECTS = [
     github: "https://github.com/omar15hr/Muscari",
     image: "/projects/muscari.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.POSTGRES, TAGS.TYPESCRIPT],
+  },
+  {
+    title: "Gif App",
+    description:
+      "Aplicación web para encontrar gifs de cualquier tipo de contenido. Desarrollada con Vite, Tailwind CSS, React y TypeScript.",
+    link: "https://gif-app-omar.netlify.app",
+    github: "https://github.com/omar15hr/GifApp",
+    image: "/projects/gifApp.webp",
+    tags: [TAGS.VITE, TAGS.TAILWIND, TAGS.REACT, TAGS.TYPESCRIPT],
   },
 ]
 ---
