@@ -8,6 +8,7 @@ import Postgres from "./icons/Postgres.astro"
 import Typescript from "./icons/TypeScript.astro"
 import React from "./icons/React.astro"
 import Vite from "./icons/Vite.astro"
+import Angular from "./icons/Angular.astro"
 
 const TAGS = {
   NEXT: {
@@ -40,8 +41,22 @@ const TAGS = {
     class: "bg-blue-800 text-white",
     icon: Vite,
   },
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-blue-900 text-white",
+    icon: Angular,
+  },
 }
 const PROJECTS = [
+  {
+    title: "Country App",
+    description:
+      "Aplicación creada con Angular para mostrar lista de países con sus datos de población, capital, etc.",
+    link: "https://omar-capital-app.netlify.app",
+    github: "https://github.com/omar15hr/angular-cero-a-experto/tree/main/04-countryApp",
+    image: "/projects/countryApp.webp",
+    tags: [TAGS.ANGULAR,],
+  },
   {
     title: "Muscari | Clothing",
     description:
