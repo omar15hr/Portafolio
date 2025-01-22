@@ -1,11 +1,11 @@
-import { Github } from "../assets/svg/Github";
-import { Gmail } from "../assets/svg/Gmail";
-import { Linkedin } from "../assets/svg/Linkedin";
-import { RightArrow } from "../assets/svg/RightArrow";
+import { Github } from "../assets/svg/header/Github";
+import { Gmail } from "../assets/svg/header/Gmail";
+import { Linkedin } from "../assets/svg/header/Linkedin";
+import { RightArrow } from "../assets/svg/navbar/RightArrow";
 
 export function Header() {
   return (
-    <div className="header md:flex-row sm:flex-col-reverse">
+    <div className="header">
 
       <div className="header-description-container">
         <span className="available-card">Disponible</span>
