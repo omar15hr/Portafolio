@@ -2,8 +2,8 @@ export function Css() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="30"
-      height="30"
+      width="50"
+      height="50"
       viewBox="0 0 512 512"
     >
       <path
