@@ -15,26 +15,25 @@ body {
   color: #598392;
 }
 /* HEADER */
-.header {
+.header { 
   display: flex;
-  flex-flow: row;
   margin-top: 100px;
   align-items: center;
   padding: 1rem;
 }
-.prueba {
-  width: 100%;
-  background-color: red;
+.header-image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.prueba2 {
+.header-description-container {
   width: 100%;
-  background-color: blue;
 }
 .header-image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-bottom: 60px;
 }
 .available-card {
   background-color: #aec3b0;
@@ -44,15 +43,45 @@ body {
   border-radius: 50px;
 }
 .header-name {
-  margin-top: 20px;
+  margin-top: 30px;
   font-weight: bold;
   color: #598392;
 }
 .career-title {
   color: #598392;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .header-description {
   margin-top: 20px;
   color: rgb(59, 59, 59);
+}
+.social-links {
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.cv-button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #598392;
+  padding: 10px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  width: 200px;
+}
+.cv-button:hover {
+  background-color: #4e7280;
+}
+.icon-tabler-arrow-right {
+  transition: transform 0.3s ease;
+}
+.cv-button:hover .icon-tabler-arrow-right {
+  transform: translateX(5px); /* Mueve el SVG 5px hacia la derecha */
 }
