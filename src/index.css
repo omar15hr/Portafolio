@@ -3,9 +3,56 @@
 @tailwind utilities;
 
 body {
-  width: 80%;
+  width: 70%;
   margin: auto;
-  background-color: #f5ebe0;
+  background-color: #d6ccc2;
 }
-
-/* #598392 */
+/* NAVBAR */
+.nav-links {
+  font-size: 18px;
+}
+.nav-links:hover {
+  color: #598392;
+}
+/* HEADER */
+.header {
+  display: flex;
+  flex-flow: row;
+  margin-top: 100px;
+  align-items: center;
+  padding: 1rem;
+}
+.prueba {
+  width: 100%;
+  background-color: red;
+}
+.prueba2 {
+  width: 100%;
+  background-color: blue;
+}
+.header-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 60px;
+}
+.available-card {
+  background-color: #aec3b0;
+  border: 1px solid #598392;
+  color: #598392;
+  padding: 10px;
+  border-radius: 50px;
+}
+.header-name {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #598392;
+}
+.career-title {
+  color: #598392;
+  margin-top: 5px;
+}
+.header-description {
+  margin-top: 20px;
+  color: rgb(59, 59, 59);
+}
