@@ -222,14 +222,45 @@ body {
   margin-top: 20px;
 }
 .project-img {
+  display: flex;
   width: 200px;
-  height: 150px;
+  height: 200px;
   border-radius: 20px;
 }
 .card-content {
   display: flex;
   flex-direction: column;
+  width: 70%;
 }
 .card-title {
-  font-size: 1.2rem;
+  color: rgb(59, 59, 59);
+  font-weight: bold;
+}
+.card-span {
+  color: #598392;
+  font-weight: normal;
+}
+.card-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.stack-item-project {
+  width: 100px;
+  text-align: center;
+  background-color: #cce2ce;
+  border: 1px solid #598392;
+  color: #598392;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+@media (max-width: 707px) {
+  .project-img {
+    display: flex;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+  }
 }
