@@ -1,29 +1,22 @@
 import { CodeSVG } from "../assets/svg/projects/CodeSVG";
 import { ExternalLink } from "../assets/svg/projects/ExternalLink";
+import muscari from "../assets/img/projects/muscari.webp";
+import todotomorrow from "../assets/img/projects/todotomorrow.webp";
 
 const projects = [
   {
-    name: 'Proyecto 1',
-    description: 'Descripción del proyecto 1',
-    image: 'https://i.ibb.co/4b2r0rX/logo-react.png',
-    url: 'https://github.com',
-    code: 'https://github.com',
+    name: 'To Do Tomorrow',
+    description: 'To Do List que desarrollé para mostrar mis conocimientos en React y TypeScript. Es una aplicación que utilizo para manejar mis tareas diarias y semanales.',
+    image: todotomorrow,
+    url: 'https://todotomorrow-omar.netlify.app/',
+    code: 'https://github.com/omar15hr/ToDoTomorrow',
     workFrom: 'Casa',
-    stack: ['React', 'TypeScript', 'TailwindCSS']
-  },
-  {
-    name: 'Proyecto 2',
-    description: 'Descripción del proyecto 2',
-    image: 'https://i.ibb.co/4b2r0rX/logo-react.png',
-    url: 'https://github.com',
-    code: 'https://github.com',
-    workFrom: 'Casa',
-    stack: ['React', 'TypeScript', 'TailwindCSS']
+    stack: ['React', 'TypeScript', 'CSS', 'HTML', ]
   },
   {
     name: 'Muscari Clothing',
     description: 'E-commerce de ropa para mujeres, hombres y niños. Diseñé y desarrollé la aplicación en conjunto con mi equipo de trabajo. Contiene funcionalidades de una tienda virtual con pasarela de pago y envío de correos electrónicos. Lo que caracteriza a esta aplicación es su diseño minimalista y su guía de talla según la prenda escogida.',
-    image: 'https://i.ibb.co/4b2r0rX/logo-react.png',
+    image: muscari,
     url: 'https://muscari.vercel.app',
     code: 'https://github.com/omar15hr/Muscari',
     workFrom: 'Proyecto de Titulo Duoc UC',
