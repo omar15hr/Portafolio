@@ -1,3 +1,4 @@
+import { About } from "./components/About";
 import { Experience } from "./components/Experience";
 import { Header } from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -13,6 +14,7 @@ function App() {
       <Stack />
       <Projects />
       <Experience />
+      <About />
     </div>
   )
 }
