@@ -6,16 +6,16 @@ export function About() {
       </h1>
 
       <div className="about-content">
-      <div className="about-items">
-            <div className="about-item">
-              <h1 className="about-item-title">1</h1>
-              <span>Año de Experiencia</span>
-            </div>
-            <div className="about-item">
-              <h1 className="about-item-title">Inglés</h1>
-              <span>Nivel Intermedio</span>
-            </div>
+        <div className="about-items">
+          <div className="about-item">
+            <h1 className="about-item-title">1</h1>
+            <span>Año de Experiencia</span>
           </div>
+          <div className="about-item">
+            <h1 className="about-item-title">Inglés</h1>
+            <span>Nivel Intermedio</span>
+          </div>
+        </div>
 
         <div className="about-desc">
           <p>
