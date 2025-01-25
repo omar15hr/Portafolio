@@ -26,7 +26,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       <div className="title-projects md:text-5xl sm:text-4xl text-center">Mis Proyectos</div>
       <p className="projects-description text-xl text-center">
         Proyectos que muestran mis capacidades y conocimientos en el desarrollo de aplicaciones web.

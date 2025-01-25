@@ -5,6 +5,13 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasBackground, setHasBackground] = useState(false);
 
+  const scrollToSection = (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -30,13 +37,13 @@ function Navbar() {
         <div className="text-lg font-bold title-logo">OH</div>
 
         <div className="hidden md:flex space-x-6 nav-container">
-          <a href="#inicio" className="nav-links">
+          <a href="#inicio" className="nav-links" onClick={() => scrollToSection("projects")}>
             Mis proyectos
           </a>
-          <a href="#servicios" className="nav-links">
+          <a href="#servicios" className="nav-links" onClick={() => scrollToSection("experience")}>
             Experiencia
           </a>
-          <a href="#contacto" className="nav-links">
+          <a href="#contacto" className="nav-links" onClick={() => scrollToSection("about")}>
             Sobre mí
           </a>
         </div>
