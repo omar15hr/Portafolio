@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 body {
-  background-color: #d6ccc2;
   font-family: "Poppins", sans-serif;
 }
 .box-container {
@@ -17,21 +16,30 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 20px;
+  color: #7bb6cc;
+  border: 2px solid #598392;
+  border-radius: 5px;
+}
+.navbar-move {
+  background-color: #59839270;
+  color: white;
+  box-shadow: 1px 1px 10px rgba(255, 251, 251, 0.308);
 }
 .title-logo {
   margin-left: 20px;
 }
 .nav-container {
   margin-right: 20px;
+  width: 100%;
 }
 .nav-links {
   font-size: 18px;
 }
 .nav-links:hover {
-  color: #598392;
+  color: #76acc0;
 }
 .toogle-button-nav {
   width: 40px;
