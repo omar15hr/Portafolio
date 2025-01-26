@@ -32,7 +32,7 @@ function Navbar() {
         hasBackground ? "navbar-move" : "bg-transparent"
       }`}
     >
-      <div className="hidden md:flex space-x-6 nav-container">
+      <div className="md:flex nav-container">
         <a
           href="#inicio"
           className="nav-links"
@@ -55,11 +55,6 @@ function Navbar() {
           Sobre mí
         </a>
       </div>
-
-      <button
-        className="toogle-button-nav md:hidden"
-      >
-      </button>
     </nav>
   );
 }
