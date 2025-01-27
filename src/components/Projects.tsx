@@ -3,6 +3,33 @@ import { ExternalLink } from "../assets/svg/projects/ExternalLink";
 import muscari from "../assets/img/projects/muscari.webp";
 import todotomorrow from "../assets/img/projects/todotomorrow.webp";
 
+import { Css } from "../assets/svg/stack/Css";
+import { Express } from "../assets/svg/stack/Express";
+import { Git } from "../assets/svg/stack/Git";
+import { GithubStack } from "../assets/svg/stack/GithubStack";
+import { Html } from "../assets/svg/stack/Html";
+import { JavaScript } from "../assets/svg/stack/JavaScript";
+import Nextjs from "../assets/svg/stack/NextJs";
+import { Node } from "../assets/svg/stack/Node";
+import { PostgreSQL } from "../assets/svg/stack/PostgreSQL";
+import { React } from "../assets/svg/stack/React";
+import { Tailwind } from "../assets/svg/stack/Tailwind";
+import { TypeScript } from "../assets/svg/stack/TypeScript";
+
+const stackIcons: Record<string, JSX.Element> = {
+  React: <React size={20} />,
+  TypeScript: <TypeScript size={20} />,
+  CSS: <Css size={20} />,
+  HTML: <Html size={20} />,
+  "Next Js": <Nextjs size={20} props={{ fill: "#fff" }} />,
+  TailwindCSS: <Tailwind size={20} />,
+  PostgreSQL: <PostgreSQL size={20} />,
+  Github: <GithubStack size={20} />,
+  Git: <Git size={20} />,
+  Express: <Express size={20} />,
+  JavaScript: <JavaScript size={20} />,
+};
+
 const projects = [
   {
     name: 'To Do Tomorrow',
@@ -10,7 +37,7 @@ const projects = [
     image: todotomorrow,
     url: 'https://todotomorrow-omar.netlify.app/',
     code: 'https://github.com/omar15hr/ToDoTomorrow',
-    workFrom: 'Casa',
+    workFrom: 'Proyecto Propio',
     stack: ['React', 'TypeScript', 'CSS', 'HTML', ]
   },
   {
@@ -45,7 +72,7 @@ export function Projects() {
               <div className="card-stack">
                 {project.stack.map((stack) => (
                   <div className="stack-item-project" key={stack}>
-                    {stack}
+                     {stackIcons[stack] || stack} {stack}
                   </div>
                 ))}
               </div>
