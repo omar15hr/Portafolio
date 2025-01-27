@@ -8,7 +8,10 @@ export function Header() {
     <div className="header">
 
       <div className="header-description-container">
-        <span className="available-card">Disponible</span>
+        <span className="available-card">
+          <span className="circle animate__animated animate__heartBeat animate__repeat-2"></span>
+          Disponible
+        </span>
         <div className="header-name md:text-6xl sm:text-4xl">
           Omar Hernández
         </div>

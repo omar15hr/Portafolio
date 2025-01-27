@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -76,15 +77,28 @@ body {
   border-radius: 50%;
 }
 .available-card {
-  width: 100px;
-  background-color: #cce2ce;
-  border: 1px solid #598392;
-  color: #598392;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 120px;
+  background-color: #aec3b0;
+  border: none;
+  color: #4c554d;
+  padding: 5px;
   border-radius: 50px;
 }
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #22d62b;
+}
+.animate__animated.animate__heartBeat {
+  --animate-duration: 2s;
+}
 .header-name {
-  margin-top: 30px;
+  margin-top: 10px;
   font-weight: bold;
   color: #598392;
 }
@@ -94,7 +108,7 @@ body {
 }
 .header-description {
   margin-top: 20px;
-  color: rgb(59, 59, 59);
+  color: rgb(184, 183, 183);
 }
 .social-links {
   display: flex;
