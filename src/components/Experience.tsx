@@ -17,13 +17,13 @@ export function Experience() {
   return (
     <div className="experience-container" id="experience">
       <div className="title-exp md:text-5xl sm:text-4xl">Experiencia</div>
-      <p className="projects-description text-xl text-center">
+      <p className="text-xl text-center exp-description">
         Experiencia profesional colaborando con empresas reales y desarrollando
         proyectos propios.
       </p>
 
       <div className="exp-card">
-        <div className="projects-grid">
+        <div className="exp-grid">
           {experience.map((experience) => (
             <div className="experience-card" key={experience.company}>
               <div className="card-content">

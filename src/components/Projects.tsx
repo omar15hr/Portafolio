@@ -10,7 +10,6 @@ import { GithubStack } from "../assets/svg/stack/GithubStack";
 import { Html } from "../assets/svg/stack/Html";
 import { JavaScript } from "../assets/svg/stack/JavaScript";
 import Nextjs from "../assets/svg/stack/NextJs";
-import { Node } from "../assets/svg/stack/Node";
 import { PostgreSQL } from "../assets/svg/stack/PostgreSQL";
 import { React } from "../assets/svg/stack/React";
 import { Tailwind } from "../assets/svg/stack/Tailwind";
