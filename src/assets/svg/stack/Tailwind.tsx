@@ -1,9 +1,13 @@
-export function Tailwind() {
+interface Props {
+  size?: number;
+}
+
+export function Tailwind({ size }: Props) {
   return (
     <svg
       viewBox="0 0 256 154"
-      width="50"
-      height="50"
+      width={size}
+      height={size}
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
     >

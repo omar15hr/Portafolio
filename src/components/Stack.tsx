@@ -20,51 +20,51 @@ export function Stack() {
       <div className="stack-list">
         
         <div className="stack-item">
-          <Html />
+          <Html size={50} />
           <span className="item-stack-name">Html</span>
         </div>
         <div className="stack-item">
-          <Css />
+          <Css size={50} />
           <span className="item-stack-name">Css</span>
         </div>
         <div className="stack-item">
-          <JavaScript />
+          <JavaScript size={50} />
           <span className="item-stack-name">JavaScript</span>
         </div>
         <div className="stack-item">
-          <TypeScript />
+          <TypeScript size={50} />
           <span className="item-stack-name">TypeScript</span>
         </div>
         <div className="stack-item">
-          <Tailwind />
+          <Tailwind size={50} />
           <span className="item-stack-name">Tailwind</span>
         </div>
         <div className="stack-item">
-          <React />
+          <React size={50} />
           <span className="item-stack-name">React</span>
         </div>
         <div className="stack-item">
-          <Nextjs />
+          <Nextjs size={50} props={{fill: "#fff"}} />
           <span className="item-stack-name">Next Js</span>
         </div>
         <div className="stack-item">
-          <Node />
+          <Node size={50} />
           <span className="item-stack-name">Node</span>
         </div>
         <div className="stack-item">
-          <Express />
+          <Express size={50} />
           <span className="item-stack-name">Express</span>
         </div>
         <div className="stack-item">
-          <PostgreSQL />
+          <PostgreSQL size={50} />
           <span className="item-stack-name">PostgreSQL</span>
         </div>
         <div className="stack-item">
-          <Git />
+          <Git size={50} />
           <span className="item-stack-name">Git</span>
         </div>
         <div className="stack-item">
-          <GithubStack />
+          <GithubStack size={50} />
           <span className="item-stack-name">Github</span>
         </div>
       </div>

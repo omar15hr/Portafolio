@@ -1,11 +1,15 @@
-export function Node() {
+interface Props {
+  size?: number;
+}
+
+export function Node({size}: Props) {
   return (
     <svg
       viewBox="0 0 256 292"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="50"
-      height="50"
+      width={size}
+      height={size}
     >
       <defs>
         <linearGradient

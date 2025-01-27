@@ -1,9 +1,13 @@
-export function Html() {
+interface Props {
+  size?: number;
+}
+
+export function Html({size}: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="50"
-      height="50"
+      width={size}
+      height={size}
       viewBox="0 0 452 520"
     >
       <path fill="#e34f26" d="M41 460L0 0h451l-41 460-185 52" />

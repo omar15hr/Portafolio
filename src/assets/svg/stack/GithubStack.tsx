@@ -1,10 +1,14 @@
-export function GithubStack () {
+interface Props {
+  size?: number;
+}
+
+export function GithubStack ({size}: Props) {
   return (
     <svg
     viewBox="0 0 256 250"
-    width="50"
-    height="50"
-    fill=""
+    width={size}
+    height={size}
+    fill="#fff"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
 >

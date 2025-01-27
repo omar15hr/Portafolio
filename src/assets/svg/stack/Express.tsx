@@ -1,10 +1,14 @@
-export function Express() {
+interface Props {
+  size?: number;
+}
+
+export function Express({size}: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      width="50"
-      height="50"
+      width={size}
+      height={size}
     >
       <path
         fill="#fff"
