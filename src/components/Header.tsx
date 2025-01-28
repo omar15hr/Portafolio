@@ -26,10 +26,29 @@ export function Header() {
           conocimientos.
         </p>
         <div className="social-links">
-          <a href=""><Linkedin /></a>
-          <a href=""><Github /></a>
-          <a href=""><Gmail /></a>
-          <a href="https://docs.google.com/document/d/16gN7OuCapPSRqVM7RusMbC_mg-KixRjZO1B2GezLfS0/edit?usp=sharing" className="cv-button" target="_blank">Curriculum Vitae<RightArrow /></a>
+          <a 
+            href="https://www.linkedin.com/in/omar-alejandro-hernandez-diaz/"
+            target="_blank"
+            className="header-icon"
+          >
+              <Linkedin />
+          </a>
+          <a 
+            href="https://github.com/omar15hr"
+            target="_blank"
+            className="header-icon"
+          >
+              <Github />
+          </a>
+          <a 
+            href="mailto:omarhrn@gmail.com"
+            target="_blank"
+            className="header-icon"
+          >
+              <Gmail />
+          </a>
+          <a 
+            href="https://docs.google.com/document/d/16gN7OuCapPSRqVM7RusMbC_mg-KixRjZO1B2GezLfS0/edit?usp=sharing" className="cv-button" target="_blank">Curriculum Vitae<RightArrow /></a>
         </div>
       </div>
       <div className="header-image-container sm:mb-14">
