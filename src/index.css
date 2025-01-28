@@ -426,8 +426,8 @@ body {
   padding: 30px;
   margin-top: 30px;
   gap: 20px;
-  color: rgb(59, 59, 59);
-  background-color: #c4bbb2;
+  color: rgb(184, 183, 183);
+  background-color: #334b5370;
   border-radius: 20px;
 }
 .about-card {
@@ -454,9 +454,9 @@ body {
   padding: 20px;
   text-align: center;
   justify-content: center;
-  background-color: #d6ccc2;
+  background-color: #59839270;
   border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 10px rgba(255, 251, 251, 0.308);
 }
 .about-item-title {
   font-size: 30px;
