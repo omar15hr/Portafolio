@@ -428,7 +428,9 @@ body {
   gap: 20px;
   color: rgb(184, 183, 183);
   background-color: #334b5370;
+  box-shadow: 1px 1px 10px rgba(255, 251, 251, 0.308);
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 .about-card {
   width: 300px;
