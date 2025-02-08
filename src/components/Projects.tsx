@@ -1,8 +1,7 @@
 import { CodeSVG } from "../assets/svg/projects/CodeSVG";
 import { ExternalLink } from "../assets/svg/projects/ExternalLink";
 import muscari from "../assets/img/projects/muscari.webp";
-import todotomorrow from "../assets/img/projects/todotomorrow.webp";
-
+import ticTacToe from "../assets/img/projects/tic-tac-toe.webp";
 import { Css } from "../assets/svg/stack/Css";
 import { Express } from "../assets/svg/stack/Express";
 import { Git } from "../assets/svg/stack/Git";
@@ -31,13 +30,13 @@ const stackIcons: Record<string, JSX.Element> = {
 
 const projects = [
   {
-    name: 'To Do Tomorrow',
-    description: 'To Do List que desarrollé para mostrar mis conocimientos en React y TypeScript. Es una aplicación que utilizo para manejar mis tareas diarias y semanales.',
-    image: todotomorrow,
-    url: 'https://todotomorrow-omar.netlify.app/',
-    code: 'https://github.com/omar15hr/ToDoTomorrow',
+    name: 'Tic Tac Toe',
+    description: 'Juego de 3 en raya. Aprendí a ejecutar la lógica de programación en JavaScript y React. Fue una experiencia divertida y aprendí mucho.',
+    image: ticTacToe,
+    url: 'https://omar-tic-tac-toe.netlify.app/',
+    code: 'https://github.com/omar15hr/tic-tac-toe',
     workFrom: 'Proyecto Propio',
-    stack: ['React', 'TypeScript', 'CSS', 'HTML', ]
+    stack: ['React', 'JavaScript', 'Github', 'Git', 'CSS', 'HTML']
   },
   {
     name: 'Muscari Clothing',
