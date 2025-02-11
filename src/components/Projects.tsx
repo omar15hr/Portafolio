@@ -1,7 +1,4 @@
 import { CodeSVG } from "../assets/svg/projects/CodeSVG";
-import { ExternalLink } from "../assets/svg/projects/ExternalLink";
-import muscari from "../assets/img/projects/muscari.webp";
-import ticTacToe from "../assets/img/projects/tic-tac-toe.webp";
 import { Css } from "../assets/svg/stack/Css";
 import { Express } from "../assets/svg/stack/Express";
 import { Git } from "../assets/svg/stack/Git";
@@ -13,6 +10,12 @@ import { PostgreSQL } from "../assets/svg/stack/PostgreSQL";
 import { React } from "../assets/svg/stack/React";
 import { Tailwind } from "../assets/svg/stack/Tailwind";
 import { TypeScript } from "../assets/svg/stack/TypeScript";
+import { ExternalLink } from "../assets/svg/projects/ExternalLink";
+
+import muscari from "../assets/img/projects/muscari.webp";
+import ticTacToe from "../assets/img/projects/tic-tac-toe.webp";
+import movieSearch from "../assets/img/projects/movie-search.webp";
+import shoppingCart from "../assets/img/projects/shopping-cart.webp";
 
 const stackIcons: Record<string, JSX.Element> = {
   React: <React size={20} />,
@@ -29,6 +32,24 @@ const stackIcons: Record<string, JSX.Element> = {
 };
 
 const projects = [
+  {
+    name: 'Shopping Cart',
+    description: 'Aplicación de React que permite a los usuarios añadir y eliminar productos del carrito de compras. Al mismo tiempo muestra filtro de precio y de categoría. Desarrollé el proyecto prácticando mis habilidades con el Context, useReducer, y realizando el fetch de los productos a través de la API de un sitio web',
+    image: shoppingCart,
+    url: 'https://omar-shopping-cart.netlify.app/',
+    code: 'https://github.com/omar15hr/shopping-cart',
+    workFrom: 'Proyecto Propio',
+    stack: ['React', 'JavaScript', 'Github', 'Git', 'CSS', 'HTML']
+  },
+  {
+    name: 'Movie Search',
+    description: 'Busca el título de una película y muestra los detalles de la misma en una página web. Desarrollé el proyecto en React para seguir desarrollando mis habilidades con los custom hooks, fetch, useMemo, useRef, useCallback y debounce',
+    image: movieSearch,
+    url: 'https://omar-movie-search.netlify.app/',
+    code: 'https://github.com/omar15hr/movie-app',
+    workFrom: 'Proyecto Propio',
+    stack: ['React', 'JavaScript', 'Github', 'Git', 'CSS', 'HTML']
+  },
   {
     name: 'Tic Tac Toe',
     description: 'Juego de 3 en raya. Aprendí a ejecutar la lógica de programación en JavaScript y React. Fue una experiencia divertida y aprendí mucho.',
