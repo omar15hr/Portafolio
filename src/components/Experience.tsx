@@ -2,11 +2,11 @@ const experience = [
   {
     date: "Ago, 2024 - Nov, 2024",
     company: "Dyatec",
-    position: "Desarrollador FullStack",
+    position: "Desarrollador Frontend",
     workDone: [
       "Diseñe el landing page del sitio web de la OTEC de La Florida. Enfocado a las noticias y cursos que ofrecen. Utilicé CSS y HTML.",
-      "Desarrollé un bloque de Moodle, que permite a los administradores del sitio obtener información sobre el status de los alumnos y sus cursos. Utilicé PHP, MySQL, HTML y CSS.",
-      "Modifiqué un plugin de Moodle que permite a los usuarios del sitio descargas masivas de certificados de cursos. Utilicé PHP, MySQL y HTML.",
+      "Desarrollé un bloque de Moodle, que permite a los administradores del sitio obtener información sobre el status de los alumnos y sus cursos, filtrando en la base de datos los usuarios ingresando su nombre de usuario. Utilicé PHP, MySQL, JavaScript, HTML y CSS.",
+      "Modifiqué un plugin de Moodle que permite a los usuarios del sitio descargas masivas de certificados de cursos. Utilicé PHP, MySQL, JavaScript y HTML.",
       "Elaboré una documentación sobre el bloque de Moodle, donde explicaban los pasos necesarios para instalar y configurar el bloque. Utilicé Markdown y HTML.",
     ],
     stack: ["PHP", "JavaScript", "CSS", "HTML", "MySQL"],
