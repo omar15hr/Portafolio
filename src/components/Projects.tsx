@@ -16,6 +16,7 @@ import muscari from "../assets/img/projects/muscari.webp";
 import ticTacToe from "../assets/img/projects/tic-tac-toe.webp";
 import movieSearch from "../assets/img/projects/movie-search.webp";
 import shoppingCart from "../assets/img/projects/shopping-cart.webp";
+import taskManager from "../assets/img/projects/task-manager.webp";
 
 const stackIcons: Record<string, JSX.Element> = {
   React: <React size={20} />,
@@ -33,8 +34,17 @@ const stackIcons: Record<string, JSX.Element> = {
 
 const projects = [
   {
+    name: 'Task Manager',
+    description: 'Permite a los usuarios añadir y eliminar task de un gestor de tareas. Al mismo tiempo permite cambiar el status de la tarea al moverla de columna. Desarrollé el proyecto prácticando mis habilidades con el drag and drop, redux toolkit para el estado de las tareas y como integrarlo todo con el ecosistema de React',
+    image: taskManager,
+    url: 'https://omar-task-manager.netlify.app/',
+    code: 'https://github.com/omar15hr/task-manager',
+    workFrom: 'Proyecto Propio',
+    stack: ['React', 'TypeScript', 'Github', 'Git', 'CSS', 'HTML', 'TailwindCSS']
+  },
+  {
     name: 'Shopping Cart',
-    description: 'Aplicación de React que permite a los usuarios añadir y eliminar productos del carrito de compras. Al mismo tiempo muestra filtro de precio y de categoría. Desarrollé el proyecto prácticando mis habilidades con el Context, useReducer, y realizando el fetch de los productos a través de la API de un sitio web',
+    description: 'Permite a los usuarios añadir y eliminar productos del carrito de compras. Al mismo tiempo muestra filtro de precio y de categoría. Desarrollé el proyecto prácticando mis habilidades con el Context, useReducer, y realizando el fetch de los productos a través de la API de un sitio web',
     image: shoppingCart,
     url: 'https://omar-shopping-cart.netlify.app/',
     code: 'https://github.com/omar15hr/shopping-cart',
