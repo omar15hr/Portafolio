@@ -38,7 +38,7 @@ const projects = [
     image: shoppingCart,
     url: 'https://omar-shopping-cart.netlify.app/',
     code: 'https://github.com/omar15hr/shopping-cart',
-    workFrom: 'Proyecto Propio',
+    workFrom: 'Proyecto Propio inspirado en Midudev',
     stack: ['React', 'JavaScript', 'Github', 'Git', 'CSS', 'HTML']
   },
   {
@@ -47,7 +47,7 @@ const projects = [
     image: movieSearch,
     url: 'https://omar-movie-search.netlify.app/',
     code: 'https://github.com/omar15hr/movie-app',
-    workFrom: 'Proyecto Propio',
+    workFrom: 'Proyecto Propio inspirado en Midudev',
     stack: ['React', 'JavaScript', 'Github', 'Git', 'CSS', 'HTML']
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     image: ticTacToe,
     url: 'https://omar-tic-tac-toe.netlify.app/',
     code: 'https://github.com/omar15hr/tic-tac-toe',
-    workFrom: 'Proyecto Propio',
+    workFrom: 'Proyecto Propio inspirado en Midudev',
     stack: ['React', 'JavaScript', 'Github', 'Git', 'CSS', 'HTML']
   },
   {
@@ -72,7 +72,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <div className="projects-container" id="projects">
+    <section className="projects-container" id="projects">
       <div className="title-projects md:text-5xl sm:text-4xl text-center">Mis Proyectos</div>
       <p className="projects-description text-xl text-center">
         Proyectos que muestran mis capacidades y conocimientos en el desarrollo de aplicaciones web.
@@ -107,6 +107,6 @@ export function Projects() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

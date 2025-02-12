@@ -5,7 +5,7 @@ import { RightArrow } from "../assets/svg/navbar/RightArrow";
 
 export function Header() {
   return (
-    <div className="header">
+    <header className="header">
 
       <div className="header-description-container">
         <span className="available-card">
@@ -58,6 +58,6 @@ export function Header() {
           className="header-image"
         />
       </div>
-    </div>
+    </header>
   );
 }

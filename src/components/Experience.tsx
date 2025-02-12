@@ -15,7 +15,7 @@ const experience = [
 
 export function Experience() {
   return (
-    <div className="experience-container" id="experience">
+    <section className="experience-container" id="experience">
       <div className="title-exp md:text-5xl sm:text-4xl">Experiencia</div>
       <p className="text-xl text-center exp-description">
         Experiencia profesional colaborando con empresas reales y desarrollando
@@ -54,6 +54,6 @@ export function Experience() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

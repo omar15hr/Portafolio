@@ -14,7 +14,7 @@ import { TypeScript } from "../assets/svg/stack/TypeScript";
 
 export function Stack() {
   return (
-    <div className="stack-container" id="stack">
+    <section className="stack-container" id="stack">
       <div className="title-stack md:text-5xl sm:text-4xl">Stack</div>
 
       <div className="stack-list">
@@ -69,6 +69,6 @@ export function Stack() {
         </div>
       </div>
 
-    </div>
+    </section>
   );
 }

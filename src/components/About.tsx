@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <div className="about-container" id="about">
+    <section className="about-container" id="about">
       <h1 className="about-title md:text-5xl sm:text-4xl text-center">
         Sobre mi
       </h1>
@@ -46,6 +46,6 @@ export function About() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
