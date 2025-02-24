@@ -231,29 +231,6 @@ body {
   font-weight: bold;
   color: #598392;
 }
-.projects-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-}
-
-.project-card {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #334b5370;
-}
-
-.project-img {
-  width: 380px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
 
 .card-content {
   flex: 1;
@@ -271,6 +248,7 @@ body {
 .card-stack {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   gap: 8px;
   margin: 10px 0;
 }
@@ -314,23 +292,7 @@ body {
   display: flex;
   gap: 20px;
 }
-.card-link {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 30px;
-  margin-top: 10px;
-  font-size: 14px;
-  padding: 10px;
-  border: 2px solid #598392;
-  border-radius: 50px;
-  font-weight: bold;
-  background-color: #59839270;
-  color: white;
-  box-shadow: 1px 1px 5px rgba(255, 251, 251, 0.308);
-}
+
 .card-link:hover {
   background-color: #4e7280;
   color: white;

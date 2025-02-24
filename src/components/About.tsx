@@ -1,7 +1,7 @@
 export function About() {
   return (
     <section className="about-container" id="about">
-      <h1 className="about-title md:text-5xl sm:text-4xl text-center">
+      <h1 className="about-title text-3xl sm:text-4xl md:text-5xl text-center">
         Sobre mi
       </h1>
 

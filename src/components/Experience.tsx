@@ -26,7 +26,7 @@ const experience = [
 export function Experience() {
   return (
     <section className="experience-container" id="experience">
-      <div className="title-exp md:text-5xl sm:text-4xl">Experiencia</div>
+      <div className="title-exp text-3xl sm:text-4xl md:text-5xl">Experiencia</div>
       <p className="text-xl text-center exp-description">
         Experiencia profesional colaborando con empresas reales y desarrollando
         proyectos propios.
