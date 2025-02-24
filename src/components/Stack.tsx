@@ -1,4 +1,3 @@
-
 import { Css } from "../assets/svg/stack/Css";
 import { Express } from "../assets/svg/stack/Express";
 import { Git } from "../assets/svg/stack/Git";
@@ -12,63 +11,34 @@ import { React } from "../assets/svg/stack/React";
 import { Tailwind } from "../assets/svg/stack/Tailwind";
 import { TypeScript } from "../assets/svg/stack/TypeScript";
 
+const stackItems = [
+  { Component: Html, name: "Html" },
+  { Component: Css, name: "Css" },
+  { Component: JavaScript, name: "JavaScript" },
+  { Component: TypeScript, name: "TypeScript" },
+  { Component: Tailwind, name: "Tailwind" },
+  { Component: React, name: "React" },
+  { Component: Nextjs, name: "Next Js", props: { fill: "#fff" } },
+  { Component: Node, name: "Node", className: "text-[#F4A261]" },
+  { Component: Express, name: "Express" },
+  { Component: PostgreSQL, name: "PostgreSQL" },
+  { Component: Git, name: "Git" },
+  { Component: GithubStack, name: "Github" },
+];
+
 export function Stack() {
   return (
     <section className="stack-container" id="stack">
       <div className="title-stack md:text-5xl sm:text-4xl">Stack</div>
 
       <div className="stack-list">
-        
-        <div className="stack-item">
-          <Html size={50} />
-          <span className="item-stack-name">Html</span>
-        </div>
-        <div className="stack-item">
-          <Css size={50} />
-          <span className="item-stack-name">Css</span>
-        </div>
-        <div className="stack-item">
-          <JavaScript size={50} />
-          <span className="item-stack-name">JavaScript</span>
-        </div>
-        <div className="stack-item">
-          <TypeScript size={50} />
-          <span className="item-stack-name">TypeScript</span>
-        </div>
-        <div className="stack-item">
-          <Tailwind size={50} />
-          <span className="item-stack-name">Tailwind</span>
-        </div>
-        <div className="stack-item">
-          <React size={50} />
-          <span className="item-stack-name">React</span>
-        </div>
-        <div className="stack-item">
-          <Nextjs size={50} props={{fill: "#fff"}} />
-          <span className="item-stack-name">Next Js</span>
-        </div>
-        <div className="stack-item">
-          <Node size={50} />
-          <span className="item-stack-name">Node</span>
-        </div>
-        <div className="stack-item">
-          <Express size={50} />
-          <span className="item-stack-name">Express</span>
-        </div>
-        <div className="stack-item">
-          <PostgreSQL size={50} />
-          <span className="item-stack-name">PostgreSQL</span>
-        </div>
-        <div className="stack-item">
-          <Git size={50} />
-          <span className="item-stack-name">Git</span>
-        </div>
-        <div className="stack-item">
-          <GithubStack size={50} />
-          <span className="item-stack-name">Github</span>
-        </div>
+        {stackItems.map(({ Component, name, props, className }, index) => (
+          <div className="stack-item" key={index}>
+            <Component size={50} {...props} />
+            <span className={`item-stack-name ${className}`}>{name}</span>
+          </div>
+        ))}
       </div>
-
     </section>
   );
 }

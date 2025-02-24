@@ -6,7 +6,6 @@ import { RightArrow } from "../assets/svg/navbar/RightArrow";
 export function Header() {
   return (
     <header className="header">
-
       <div className="header-description-container">
         <span className="available-card">
           <span className="circle animate__animated animate__heartBeat animate__repeat-2"></span>
@@ -15,7 +14,7 @@ export function Header() {
         <div className="header-name md:text-6xl sm:text-4xl">
           Omar Hernández
         </div>
-        <div className="career-title md:text-3xl sm:text-xl">
+        <div className="career-title md:text-3xl sm:text-xl text-[#F4A261]">
           Desarrollador Frontend
         </div>
         <p className="header-description md:text-xl sm:text-xl">
@@ -26,29 +25,35 @@ export function Header() {
           conocimientos.
         </p>
         <div className="social-links">
-          <a 
+          <a
             href="https://www.linkedin.com/in/omar-alejandro-hernandez-diaz/"
             target="_blank"
             className="header-icon"
           >
-              <Linkedin />
+            <Linkedin />
           </a>
-          <a 
+          <a
             href="https://github.com/omar15hr"
             target="_blank"
             className="header-icon"
           >
-              <Github />
+            <Github />
           </a>
-          <a 
+          <a
             href="mailto:omarhrn@gmail.com"
             target="_blank"
             className="header-icon"
           >
-              <Gmail />
+            <Gmail />
           </a>
-          <a 
-            href="https://docs.google.com/document/d/1-udIQ48xSG2Rp4eVXnlHtnHCdsZ7bhSnGluSsoT-iSE/edit?usp=sharing" className="cv-button" target="_blank">Curriculum Vitae<RightArrow /></a>
+          <a
+            href="https://docs.google.com/document/d/1-udIQ48xSG2Rp4eVXnlHtnHCdsZ7bhSnGluSsoT-iSE/edit?usp=sharing"
+            className="cv-button"
+            target="_blank"
+          >
+            Curriculum Vitae
+            <RightArrow />
+          </a>
         </div>
       </div>
       <div className="header-image-container sm:mb-14">

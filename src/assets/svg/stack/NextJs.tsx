@@ -2,7 +2,7 @@ import type { SVGProps } from "react";
 
 interface Props {
   size?: number;
-  props: SVGProps<SVGSVGElement>;
+  props?: SVGProps<SVGSVGElement>;
 }
 
 const Nextjs = ({ size, props }: Props) => (

@@ -4,7 +4,7 @@ export function Github () {
     viewBox="0 0 256 250"
     width="30"
     height="30"
-    fill="#598392"
+    fill="#E76F51"
     xmlns="http://www.w3.org/2000/svg"
     preserveAspectRatio="xMidYMid"
 >
