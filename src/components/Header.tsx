@@ -48,7 +48,7 @@ export function Header() {
               <Gmail />
           </a>
           <a 
-            href="https://docs.google.com/document/d/16gN7OuCapPSRqVM7RusMbC_mg-KixRjZO1B2GezLfS0/edit?usp=sharing" className="cv-button" target="_blank">Curriculum Vitae<RightArrow /></a>
+            href="https://docs.google.com/document/d/1-udIQ48xSG2Rp4eVXnlHtnHCdsZ7bhSnGluSsoT-iSE/edit?usp=sharing" className="cv-button" target="_blank">Curriculum Vitae<RightArrow /></a>
         </div>
       </div>
       <div className="header-image-container sm:mb-14">
