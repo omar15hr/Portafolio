@@ -5,7 +5,8 @@ const experience = [
     position: "Desarrollador Frontend",
     workDone: [
       "Diseñe landing page del sitio web utilizando HTML, CSS y JavaScript.",
-      "Añadí funcionalidades para mejorar la interfaz de usuario con carruseles, filtros y carrito de compras.",
+      "Añadí funcionalidades para mejorar la interfaz de usuario con carruseles, modales y botones.",
+      "Desarrollé la lógica del carrito de compras y la utilización de cupones."
     ],
     stack: ["React", "JavaScript", "CSS", "HTML"],
   },

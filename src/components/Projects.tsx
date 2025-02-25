@@ -36,11 +36,10 @@ const projects = [
   {
     name: "Task Manager",
     description:
-      "Permite a los usuarios añadir y eliminar task de un gestor de tareas. Al mismo tiempo permite cambiar el status de la tarea al moverla de columna. Desarrollé el proyecto prácticando mis habilidades con el drag and drop, redux toolkit para el estado de las tareas y como integrarlo todo con el ecosistema de React",
+      "Permite a los usuarios añadir y eliminar task de un gestor de tareas. Al mismo tiempo permite cambiar el status de la tarea al moverla de columna. Desarrollé el proyecto prácticando mis habilidades con el drag and drop, redux toolkit para el estado de las tareas y como integrarlo todo con el ecosistema de React.",
     image: taskManager,
     url: "https://omar-task-manager.netlify.app/",
     code: "https://github.com/omar15hr/task-manager",
-    workFrom: "Proyecto Propio",
     stack: [
       "React",
       "TypeScript",
@@ -54,31 +53,28 @@ const projects = [
   {
     name: "Shopping Cart",
     description:
-      "Permite a los usuarios añadir y eliminar productos del carrito de compras. Al mismo tiempo muestra filtro de precio y de categoría. Desarrollé el proyecto prácticando mis habilidades con el Context, useReducer, y realizando el fetch de los productos a través de la API de un sitio web",
+      "Permite a los usuarios añadir y eliminar productos del carrito de compras. Al mismo tiempo muestra filtro de precio y de categoría. Desarrollé el proyecto prácticando mis habilidades con el Context, useReducer, y realizando el fetch de los productos a través de la API de un sitio web.",
     image: shoppingCart,
     url: "https://omar-shopping-cart.netlify.app/",
     code: "https://github.com/omar15hr/shopping-cart",
-    workFrom: "Proyecto Propio inspirado en Midudev",
     stack: ["React", "JavaScript", "Github", "Git", "CSS", "HTML"],
   },
   {
     name: "Movie Search",
     description:
-      "Busca el título de una película y muestra los detalles de la misma en una página web. Desarrollé el proyecto en React para seguir desarrollando mis habilidades con los custom hooks, fetch, useMemo, useRef, useCallback y debounce",
+      "Busca el título de una película y muestra los detalles de la misma en una página web. Desarrollé el proyecto en React para seguir desarrollando mis habilidades con los custom hooks, fetch, useMemo, useRef, useCallback y debounce.",
     image: movieSearch,
     url: "https://omar-movie-search.netlify.app/",
     code: "https://github.com/omar15hr/movie-app",
-    workFrom: "Proyecto Propio inspirado en Midudev",
     stack: ["React", "JavaScript", "Github", "Git", "CSS", "HTML"],
   },
   {
     name: "Tic Tac Toe",
     description:
-      "Juego de 3 en raya. Aprendí a ejecutar la lógica de programación en JavaScript y React. Fue una experiencia divertida y aprendí mucho.",
+      "Juego de 3 en raya. Aprendí a ejecutar la lógica de programación en JavaScript y React. Fue una experiencia divertida y aprendí mucho en como separar la lógica de la vista y componentizar el código de React para mantener un código limpio.",
     image: ticTacToe,
     url: "https://omar-tic-tac-toe.netlify.app/",
     code: "https://github.com/omar15hr/tic-tac-toe",
-    workFrom: "Proyecto Propio inspirado en Midudev",
     stack: ["React", "JavaScript", "Github", "Git", "CSS", "HTML"],
   },
   {
@@ -88,7 +84,6 @@ const projects = [
     image: muscari,
     url: "https://muscari.vercel.app",
     code: "https://github.com/omar15hr/Muscari",
-    workFrom: "Proyecto de Titulo Duoc UC",
     stack: [
       "React",
       "TypeScript",
@@ -115,37 +110,40 @@ export function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <div
-            className="bg-[#334b5370] rounded-lg shadow-lg overflow-hidden"
+            className="bg-[#334b5370] rounded-lg shadow-lg overflow-hidden flex flex-col"
             key={project.name}
+            style={{ minHeight: "500px" }}
           >
             <img
               src={project.image}
               alt={project.name}
               className="w-full h-48 object-cover"
             />
-            <div className="p-6">
-              <h3 className="card-title text-2xl font-bold">
-                {project.name}
-                <span className="card-span font-normal">
-                  {" "}
-                  - {project.workFrom}
-                </span>
-              </h3>
-              <p className="card-description text-base my-2 sm:text-base">
+            <div className="p-6 flex flex-col flex-grow">
+              <h3 className="card-title text-2xl font-bold">{project.name}</h3>
+              <p className="card-description text-base my-2 sm:text-base flex-grow">
                 {project.description}
               </p>
-              <div className="card-stack">
+              <div className="card-stack mb-4">
                 {project.stack.map((stack) => (
                   <div className="stack-item-project" key={stack}>
                     {stackIcons[stack] || stack} {stack}
                   </div>
                 ))}
               </div>
-              <div className="flex gap-4">
-                <a href={project.url} target="_blank" className="flex items-center gap-1 text-[#fff] bg-[#59839270] p-1 rounded-full text-sm w-full text-center justify-center shadow-sm">
+              <div className="flex gap-4 mt-auto">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  className="flex items-center gap-1 text-[#293d44] bg-[#F4A261] p-1 rounded-full text-sm w-full text-center justify-center shadow-sm"
+                >
                   Ver Proyecto <ExternalLink />
                 </a>
-                <a href={project.code} target="_blank" className="flex items-center gap-1 text-[#fff] bg-[#59839270] p-1 rounded-full text-sm w-full text-center justify-center shadow-sm">
+                <a
+                  href={project.code}
+                  target="_blank"
+                  className="flex items-center gap-1 text-[#fff] bg-[#59839270] p-1 rounded-full text-sm w-full text-center justify-center shadow-sm"
+                >
                   Ver Código <CodeSVG />
                 </a>
               </div>
