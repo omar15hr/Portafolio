@@ -19,24 +19,24 @@ import "./Projects.css";
 import { Box } from "../assets/svg/Icons";
 
 const stackIcons: Record<string, JSX.Element> = {
-  React: <React size={20} />,
-  TypeScript: <TypeScript size={20} />,
-  CSS: <Css size={20} />,
-  HTML: <Html size={20} />,
-  "Next Js": <Nextjs size={20} props={{ fill: "#fff" }} />,
-  TailwindCSS: <Tailwind size={20} />,
-  PostgreSQL: <PostgreSQL size={20} />,
-  Github: <GithubStack size={20} />,
-  Git: <Git size={20} />,
-  Express: <Express size={20} />,
-  JavaScript: <JavaScript size={20} />,
+  React: <React size={18} />,
+  TypeScript: <TypeScript size={18} />,
+  CSS: <Css size={18} />,
+  HTML: <Html size={18} />,
+  "Next Js": <Nextjs size={18} props={{ fill: "#fff" }} />,
+  TailwindCSS: <Tailwind size={18} />,
+  PostgreSQL: <PostgreSQL size={18} />,
+  Github: <GithubStack size={18} />,
+  Git: <Git size={18} />,
+  Express: <Express size={18} />,
+  JavaScript: <JavaScript size={18} />,
 };
 
 const projects = [
   {
     name: "Background Snippets",
     description:
-      "Aplicación web para obtener fragmentos de backgrounds para usar en tus proyectos. Puedes obtener un fragmento de color, una imagen, un gradiente o un patrón de fondo. Este proyectos seguirá en desarrollo y se actualizará con nuevas funcionalidades.",
+      "Puedes obtener diferentes colores de fondo para tus páginas web, obteniendo el código y previsualizandolo antes.",
     image: backgroundSnippets,
     url: "https://background-snippets-two.vercel.app",
     code: "https://github.com/omar15hr/background-snippets",
@@ -51,7 +51,7 @@ const projects = [
   {
     name: "Muscari Clothing",
     description:
-      "E-commerce de ropa para mujeres, hombres y niños. Diseñé y desarrollé la aplicación en conjunto con mi equipo de trabajo. Contiene funcionalidades de una tienda virtual con pasarela de pago y envío de correos electrónicos. Lo que caracteriza a esta aplicación es su diseño minimalista y su guía de talla según la prenda escogida.",
+      "E-commerce de ropa para mujeres, hombres y niños. Contiene funcionalidades de una tienda virtual con pasarela de pago y envío de correos electrónicos.",
     image: muscari,
     url: "https://muscari.vercel.app",
     code: "https://github.com/omar15hr/Muscari",
@@ -79,46 +79,20 @@ export function Projects() {
         de aplicaciones web.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="flex flex-col gap-5 w-full max-w-5xl mx-auto p-2">
         {projects.map((project) => (
-          <div
-            className="bg-[#334b5370] rounded-lg shadow-lg overflow-hidden flex flex-col"
-            key={project.name}
-            style={{ minHeight: "500px" }}
-          >
-            <img
-              src={project.image}
-              alt={project.name}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-6 flex flex-col flex-grow">
-              <h3 className="card-title text-2xl font-bold">{project.name}</h3>
-              <p className="card-description text-base my-2 sm:text-base flex-grow">
-                {project.description}
-              </p>
-              <div className="card-stack mb-4">
-                {project.stack.map((stack) => (
+          <div key={project.name} className="flex flex-row gap-6">
+            <img src={project.image} alt={project.name} className="w-[400px] rounded-md" />
+            <div className="flex flex-col gap-4">
+              <h1 className="text-2xl text-[#F4A261]">{project.name}</h1>
+              <div className="flex flex-row gap-2 items-center">
+              {project.stack.map((stack) => (
                   <div className="stack-item-project" key={stack}>
                     {stackIcons[stack] || stack} {stack}
                   </div>
                 ))}
               </div>
-              <div className="flex gap-4 mt-auto">
-                <a
-                  href={project.url}
-                  target="_blank"
-                  className="flex items-center gap-1 text-[#293d44] bg-[#F4A261] p-1 rounded-full text-sm w-full text-center justify-center shadow-sm"
-                >
-                  Ver Proyecto <ExternalLink />
-                </a>
-                <a
-                  href={project.code}
-                  target="_blank"
-                  className="flex items-center gap-1 text-[#fff] bg-[#59839270] p-1 rounded-full text-sm w-full text-center justify-center shadow-sm"
-                >
-                  Ver Código <CodeSVG />
-                </a>
-              </div>
+              <p className="text-sm text-[#eff6e0]">{project.description}</p>
             </div>
           </div>
         ))}

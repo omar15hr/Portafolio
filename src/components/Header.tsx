@@ -1,20 +1,18 @@
 import { Github } from "../assets/svg/header/Github";
 import { Linkedin } from "../assets/svg/header/Linkedin";
 import { RightArrow } from "../assets/svg/navbar/RightArrow";
-import "./Header.css";
 
 export function Header() {
   return (
-    <header className="header max-w-5xl mx-auto">
-      <div className="header-description-container">
-        <span className="available-card">
-          <span className="circle animate__animated animate__heartBeat animate__repeat-2"></span>
+    <header className="">
+      <div className="">
+        <span className="">
           Disponible
         </span>
-        <div className="header-name md:text-6xl sm:text-4xl">
+        <div className="md:text-6xl sm:text-4xl text-[#F5E8C7]">
           Omar Hernández
         </div>
-        <div className="career-title md:text-3xl sm:text-xl text-[#F4A261]">
+        <div className="md:text-3xl sm:text-xl text-[#F2A365]">
           Desarrollador Frontend
         </div>
         <p className="header-description md:text-xl sm:text-xl">
@@ -41,7 +39,7 @@ export function Header() {
           </a>
           <a
             href="https://docs.google.com/document/d/1-udIQ48xSG2Rp4eVXnlHtnHCdsZ7bhSnGluSsoT-iSE/edit?usp=sharing"
-            className="cv-button"
+            className="cv-button bg-[#ffd166]"
             target="_blank"
           >
             Curriculum Vitae
