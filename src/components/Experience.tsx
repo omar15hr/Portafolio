@@ -1,3 +1,6 @@
+import { Briefcase } from "../assets/svg/Icons";
+import "./Experience.css";
+
 const experience = [
   {
     date: "Nov, 2024 - Feb, 2025",
@@ -27,7 +30,10 @@ const experience = [
 export function Experience() {
   return (
     <section className="experience-container" id="experience">
-      <div className="title-exp text-3xl sm:text-4xl md:text-5xl">Experiencia</div>
+      <div className="flex flex-row gap-2 items-center justify-center title-exp text-3xl sm:text-4xl md:text-5xl">
+        <Briefcase size={50} />
+        <span>Experiencia</span>
+      </div>
       <p className="text-xl text-center exp-description">
         Experiencia profesional colaborando con empresas reales y desarrollando
         proyectos propios.

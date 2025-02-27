@@ -1,11 +1,11 @@
 import { Github } from "../assets/svg/header/Github";
-import { Gmail } from "../assets/svg/header/Gmail";
 import { Linkedin } from "../assets/svg/header/Linkedin";
 import { RightArrow } from "../assets/svg/navbar/RightArrow";
+import "./Header.css";
 
 export function Header() {
   return (
-    <header className="header">
+    <header className="header max-w-5xl mx-auto">
       <div className="header-description-container">
         <span className="available-card">
           <span className="circle animate__animated animate__heartBeat animate__repeat-2"></span>
@@ -38,13 +38,6 @@ export function Header() {
             className="header-icon"
           >
             <Github />
-          </a>
-          <a
-            href="mailto:omarhrn@gmail.com"
-            target="_blank"
-            className="header-icon"
-          >
-            <Gmail />
           </a>
           <a
             href="https://docs.google.com/document/d/1-udIQ48xSG2Rp4eVXnlHtnHCdsZ7bhSnGluSsoT-iSE/edit?usp=sharing"

@@ -1,9 +1,15 @@
+import { Avatar } from "../assets/svg/Icons";
+import "./About.css";
+
 export function About() {
   return (
     <section className="p-8 max-w-screen-xl mx-auto" id="about">
-      <h1 className="about-title mb-8 text-3xl sm:text-4xl md:text-5xl text-center">
-        Sobre mi
-      </h1>
+      <div className="flex flex-row gap-2 items-center justify-center text-[#598392] mb-8">
+        <Avatar size={50} />
+        <h1 className=" font-bold text-3xl sm:text-4xl md:text-5xl text-center">
+          Sobre mi
+        </h1>
+      </div>
 
       <div className="flex flex-col lg:flex-row gap-8 text-[#b8b7b7] ">
         <div className="about-items items-center justify-center">
@@ -17,7 +23,10 @@ export function About() {
           </div>
         </div>
 
-        <div style={{ boxShadow: '1px 1px 10px rgba(255, 251, 251, 0.308)' }} className="about-desc bg-[#334b5370] p-8 rounded-lg shadow-lg">
+        <div
+          style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }}
+          className="about-desc bg-[#334b5370] p-8 rounded-lg shadow-lg"
+        >
           <p>
             Comprometido con la creación de interfaces y experiencias digitales
             que conecten con los usuarios y resuelvan problemas de forma

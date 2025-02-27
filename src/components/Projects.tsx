@@ -13,10 +13,10 @@ import { TypeScript } from "../assets/svg/stack/TypeScript";
 import { ExternalLink } from "../assets/svg/projects/ExternalLink";
 
 import muscari from "../assets/img/projects/muscari.webp";
-import ticTacToe from "../assets/img/projects/tic-tac-toe.webp";
-import movieSearch from "../assets/img/projects/movie-search.webp";
-import shoppingCart from "../assets/img/projects/shopping-cart.webp";
-import taskManager from "../assets/img/projects/task-manager.webp";
+import backgroundSnippets from "../assets/img/projects/background-snippet.webp";
+
+import "./Projects.css";
+import { Box } from "../assets/svg/Icons";
 
 const stackIcons: Record<string, JSX.Element> = {
   React: <React size={20} />,
@@ -34,48 +34,19 @@ const stackIcons: Record<string, JSX.Element> = {
 
 const projects = [
   {
-    name: "Task Manager",
+    name: "Background Snippets",
     description:
-      "Permite a los usuarios añadir y eliminar task de un gestor de tareas. Al mismo tiempo permite cambiar el status de la tarea al moverla de columna. Desarrollé el proyecto prácticando mis habilidades con el drag and drop, redux toolkit para el estado de las tareas y como integrarlo todo con el ecosistema de React.",
-    image: taskManager,
-    url: "https://omar-task-manager.netlify.app/",
-    code: "https://github.com/omar15hr/task-manager",
+      "Aplicación web para obtener fragmentos de backgrounds para usar en tus proyectos. Puedes obtener un fragmento de color, una imagen, un gradiente o un patrón de fondo. Este proyectos seguirá en desarrollo y se actualizará con nuevas funcionalidades.",
+    image: backgroundSnippets,
+    url: "https://background-snippets-two.vercel.app",
+    code: "https://github.com/omar15hr/background-snippets",
     stack: [
       "React",
       "TypeScript",
+      "TailwindCSS",
       "Github",
       "Git",
-      "CSS",
-      "HTML",
-      "TailwindCSS",
     ],
-  },
-  {
-    name: "Shopping Cart",
-    description:
-      "Permite a los usuarios añadir y eliminar productos del carrito de compras. Al mismo tiempo muestra filtro de precio y de categoría. Desarrollé el proyecto prácticando mis habilidades con el Context, useReducer, y realizando el fetch de los productos a través de la API de un sitio web.",
-    image: shoppingCart,
-    url: "https://omar-shopping-cart.netlify.app/",
-    code: "https://github.com/omar15hr/shopping-cart",
-    stack: ["React", "JavaScript", "Github", "Git", "CSS", "HTML"],
-  },
-  {
-    name: "Movie Search",
-    description:
-      "Busca el título de una película y muestra los detalles de la misma en una página web. Desarrollé el proyecto en React para seguir desarrollando mis habilidades con los custom hooks, fetch, useMemo, useRef, useCallback y debounce.",
-    image: movieSearch,
-    url: "https://omar-movie-search.netlify.app/",
-    code: "https://github.com/omar15hr/movie-app",
-    stack: ["React", "JavaScript", "Github", "Git", "CSS", "HTML"],
-  },
-  {
-    name: "Tic Tac Toe",
-    description:
-      "Juego de 3 en raya. Aprendí a ejecutar la lógica de programación en JavaScript y React. Fue una experiencia divertida y aprendí mucho en como separar la lógica de la vista y componentizar el código de React para mantener un código limpio.",
-    image: ticTacToe,
-    url: "https://omar-tic-tac-toe.netlify.app/",
-    code: "https://github.com/omar15hr/tic-tac-toe",
-    stack: ["React", "JavaScript", "Github", "Git", "CSS", "HTML"],
   },
   {
     name: "Muscari Clothing",
@@ -99,8 +70,9 @@ const projects = [
 export function Projects() {
   return (
     <section className="projects-container" id="projects">
-      <div className="title-projects md:text-5xl sm:text-4xl text-center">
-        Mis Proyectos
+      <div className="flex flex-row gap-2 items-center justify-center title-projects md:text-5xl sm:text-4xl text-center">
+        <Box size={50} />
+        <span>Mis Proyectos</span>
       </div>
       <p className="projects-description text-xl text-center">
         Proyectos que muestran mis capacidades y conocimientos en el desarrollo
