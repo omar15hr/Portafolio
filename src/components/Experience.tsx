@@ -1,5 +1,15 @@
-import { Briefcase } from "../assets/svg/Icons";
-import "./Experience.css";
+import { Briefcase, MySQL, Php } from "../assets/svg/Icons";
+import { TypeScript } from "../assets/svg/stack/TypeScript";
+import { Css } from "../assets/svg/stack/Css";
+import { Html } from "../assets/svg/stack/Html";
+import Nextjs from "../assets/svg/stack/NextJs";
+import { Tailwind } from "../assets/svg/stack/Tailwind";
+import { PostgreSQL } from "../assets/svg/stack/PostgreSQL";
+import { GithubStack } from "../assets/svg/stack/GithubStack";
+import { Git } from "../assets/svg/stack/Git";
+import { Express } from "../assets/svg/stack/Express";
+import { JavaScript } from "../assets/svg/stack/JavaScript";
+import { React } from "../assets/svg/stack/React";
 
 const experience = [
   {
@@ -9,7 +19,7 @@ const experience = [
     workDone: [
       "Diseñe landing page del sitio web utilizando HTML, CSS y JavaScript.",
       "Añadí funcionalidades para mejorar la interfaz de usuario con carruseles, modales y botones.",
-      "Desarrollé la lógica del carrito de compras y la utilización de cupones."
+      "Desarrollé la lógica del carrito de compras y la utilización de cupones.",
     ],
     stack: ["React", "JavaScript", "CSS", "HTML"],
   },
@@ -27,45 +37,65 @@ const experience = [
   },
 ];
 
+const stackIcons: Record<string, JSX.Element> = {
+  React: <React size={24} />,
+  TypeScript: <TypeScript size={24} />,
+  CSS: <Css size={24} />,
+  HTML: <Html size={24} />,
+  "Next Js": <Nextjs size={24} props={{ fill: "#fff" }} />,
+  TailwindCSS: <Tailwind size={24} />,
+  PostgreSQL: <PostgreSQL size={24} />,
+  Github: <GithubStack size={24} />,
+  Git: <Git size={24} />,
+  Express: <Express size={24} />,
+  JavaScript: <JavaScript size={24} />,
+  MySQL: <MySQL size={24} />,
+  Php: <Php size={24} />,
+};
+
 export function Experience() {
   return (
-    <section className="experience-container" id="experience">
+    <section
+      className="flex flex-col gap-3 mt-20 text-[#F5E8C7]"
+      id="experience"
+    >
       <div className="flex flex-row gap-2 items-center justify-center title-exp text-3xl sm:text-4xl md:text-5xl">
         <Briefcase size={50} />
-        <span>Experiencia</span>
+        <span className="text-xl md:text-4xl sm:text-2xl">Experiencia</span>
       </div>
-      <p className="text-xl text-center exp-description">
+      <p className="md:text-xl sm:text-xl text-[#bbb197] text-center p-5">
         Experiencia profesional colaborando con empresas reales y desarrollando
         proyectos propios.
       </p>
 
-      <div className="exp-card">
-        <div className="exp-grid">
-          {experience.map(({ date, company, position, workDone, stack }) => (
-            <div className="experience-card" key={company}>
-              <div className="card-content">
-                <span className="exp-date">{date}</span>
-                <h3 className="card-position text-2xl font-bold">{position}</h3>
-                <span className="card-span font-bold">{company}</span>
-                <div>
-                  <ul className="work-done-list">
-                    {workDone.map((exp1, index) => (
-                      <li key={index}>{exp1}</li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="card-stack">
-                  {stack.map((stack) => (
-                    <div className="stack-item-project" key={stack}>
-                      {stack}
-                    </div>
+      <div className="flex flex-col gap-5 w-full max-w-5xl mx-auto p-5">
+        {experience.map(({ date, company, position, workDone, stack }) => (
+          <div className="bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-5" key={company}>
+            <div className="flex flex-col gap-2">
+              <span className="text-[#F2A365]">{date}</span>
+              <h3 className="card-position text-2xl font-bold">{position}</h3>
+              <span className="text-[#E76F51] font-bold">{company}</span>
+              <div className="p-5">
+                <ul className="list-disc">
+                  {workDone.map((exp1, index) => (
+                    <li key={index}>{exp1}</li>
                   ))}
-                </div>
+                </ul>
+              </div>
+
+              <div className="flex flex-row gap-3">
+                {stack.map((stack) => (
+                  <div
+                    className="flex flex-row gap-2 items-center justify-center"
+                    key={stack}
+                  >
+                    {stackIcons[stack] || stack}
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );
