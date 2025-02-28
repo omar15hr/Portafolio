@@ -1,5 +1,4 @@
-import { Github, Linkedin } from "../assets/svg/Icons";
-import { RightArrow } from "../assets/svg/navbar/RightArrow";
+import { Github, Linkedin, RightArrow } from "../assets/svg/Icons";
 
 const socials = [
   { name: 'Github', href: 'https://github.com/omar15hr', Component: Github, size: 30 },

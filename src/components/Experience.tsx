@@ -1,15 +1,17 @@
 import { Briefcase, MySQL, Php } from "../assets/svg/Icons";
-import { TypeScript } from "../assets/svg/stack/TypeScript";
-import { Css } from "../assets/svg/stack/Css";
-import { Html } from "../assets/svg/stack/Html";
-import Nextjs from "../assets/svg/stack/NextJs";
-import { Tailwind } from "../assets/svg/stack/Tailwind";
-import { PostgreSQL } from "../assets/svg/stack/PostgreSQL";
-import { GithubStack } from "../assets/svg/stack/GithubStack";
-import { Git } from "../assets/svg/stack/Git";
-import { Express } from "../assets/svg/stack/Express";
-import { JavaScript } from "../assets/svg/stack/JavaScript";
-import { React } from "../assets/svg/stack/React";
+import {
+  Css,
+  Express,
+  Git,
+  GithubStack,
+  Html,
+  JavaScript,
+  Nextjs,
+  PostgreSQL,
+  ReactSVG,
+  Tailwind,
+  TypeScript,
+} from "../assets/svg/Icons";
 
 const experience = [
   {
@@ -38,7 +40,7 @@ const experience = [
 ];
 
 const stackIcons: Record<string, JSX.Element> = {
-  React: <React size={24} />,
+  React: <ReactSVG size={24} />,
   TypeScript: <TypeScript size={24} />,
   CSS: <Css size={24} />,
   HTML: <Html size={24} />,

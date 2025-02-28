@@ -33,11 +33,11 @@ export const Education = () => {
       <div className="flex flex-col lg:flex-row gap-3 text-[#bbb197] max-w-7xl mx-auto">
         <div className="flex flex-col gap-5">
           {education.map(
-            ({ date, company, position, logo, maxWidth, maxHeight }) => (
+            ({ date, company, position, logo, maxWidth, maxHeight }, index) => (
               <div
                 style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }}
                 className="flex flex-col gap-3 bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5"
-                key={date}
+                key={index}
               >
                 <div className="flex flex-col gap-1">
                   <h1 className="font-bold text-xl">{position}</h1>

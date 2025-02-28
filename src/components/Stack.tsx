@@ -1,18 +1,20 @@
-import { Code } from "../assets/svg/Icons";
-import { Css } from "../assets/svg/stack/Css";
-import { Express } from "../assets/svg/stack/Express";
-import { Git } from "../assets/svg/stack/Git";
-import { GithubStack } from "../assets/svg/stack/GithubStack";
-import { Html } from "../assets/svg/stack/Html";
-import { JavaScript } from "../assets/svg/stack/JavaScript";
-import MongoDB from "../assets/svg/stack/Mongo";
-import Nextjs from "../assets/svg/stack/NextJs";
-import { Node } from "../assets/svg/stack/Node";
-import { PostgreSQL } from "../assets/svg/stack/PostgreSQL";
-import Prisma from "../assets/svg/stack/Prisma";
-import { React } from "../assets/svg/stack/React";
-import { Tailwind } from "../assets/svg/stack/Tailwind";
-import { TypeScript } from "../assets/svg/stack/TypeScript";
+import {
+  Code,
+  Css,
+  Express,
+  Git,
+  GithubStack,
+  Html,
+  JavaScript,
+  MongoDB,
+  Nextjs,
+  Node,
+  PostgreSQL,
+  Prisma,
+  ReactSVG,
+  Tailwind,
+  TypeScript,
+} from "../assets/svg/Icons";
 
 const stackItems = [
   { Component: Html, name: "Html" },
@@ -20,7 +22,7 @@ const stackItems = [
   { Component: JavaScript, name: "JavaScript" },
   { Component: TypeScript, name: "TypeScript" },
   { Component: Tailwind, name: "Tailwind" },
-  { Component: React, name: "React" },
+  { Component: ReactSVG, name: "React" },
   { Component: Nextjs, name: "Next Js", props: { fill: "#fff" } },
   { Component: Node, name: "Node" },
   { Component: Express, name: "Express" },

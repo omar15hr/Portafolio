@@ -1,14 +1,16 @@
-import { Css } from "../assets/svg/stack/Css";
-import { Express } from "../assets/svg/stack/Express";
-import { Git } from "../assets/svg/stack/Git";
-import { GithubStack } from "../assets/svg/stack/GithubStack";
-import { Html } from "../assets/svg/stack/Html";
-import { JavaScript } from "../assets/svg/stack/JavaScript";
-import Nextjs from "../assets/svg/stack/NextJs";
-import { PostgreSQL } from "../assets/svg/stack/PostgreSQL";
-import { React } from "../assets/svg/stack/React";
-import { Tailwind } from "../assets/svg/stack/Tailwind";
-import { TypeScript } from "../assets/svg/stack/TypeScript";
+import {
+  Css,
+  Express,
+  Git,
+  GithubStack,
+  Html,
+  JavaScript,
+  Nextjs,
+  PostgreSQL,
+  ReactSVG,
+  Tailwind,
+  TypeScript,
+} from "../assets/svg/Icons";
 
 import muscari from "../assets/img/projects/muscari.webp";
 import backgroundSnippets from "../assets/img/projects/background-snippet.webp";
@@ -16,7 +18,7 @@ import backgroundSnippets from "../assets/img/projects/background-snippet.webp";
 import { Box, CodeSVG, ExternalLink } from "../assets/svg/Icons";
 
 const stackIcons: Record<string, JSX.Element> = {
-  React: <React size={24} />,
+  React: <ReactSVG size={24} />,
   TypeScript: <TypeScript size={24} />,
   CSS: <Css size={24} />,
   HTML: <Html size={24} />,
