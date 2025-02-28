@@ -1,38 +1,31 @@
 import { Avatar } from "../assets/svg/Icons";
-import "./About.css";
 
 export function About() {
   return (
-    <section className="p-8 max-w-screen-xl mx-auto" id="about">
-      <div className="flex flex-row gap-2 items-center justify-center text-[#598392] mb-8">
+    <section className="flex flex-col gap-3 mt-20 mb-10" id="about">
+      <div className="flex flex-row gap-2 items-center justify-center text-[#F5E8C7] mb-8">
         <Avatar size={50} />
-        <h1 className=" font-bold text-3xl sm:text-4xl md:text-5xl text-center">
+        <h1 className="text-xl md:text-4xl sm:text-2xl">
           Sobre mi
         </h1>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-8 text-[#b8b7b7] ">
-        <div className="about-items items-center justify-center">
-          <div className="about-item">
-            <h1 className="about-item-title">1</h1>
+      <div className="flex flex-col lg:flex-row gap-8 text-[#bbb197]">
+        <div className="flex flex-col gap-10 items-center justify-center">
+          <div style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }} className="flex flex-col items-center justify-center bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5">
+            <h1 className="text-xl md:text-4xl sm:text-2xl font-bold text-[#F2A365]">1</h1>
             <span>Año de Experiencia</span>
           </div>
-          <div className="about-item">
-            <h1 className="about-item-title">Inglés</h1>
+          <div style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }} className="flex flex-col items-center justify-center bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5">
+            <h1 className="text-xl md:text-4xl sm:text-2xl font-bold text-[#F2A365]">Inglés</h1>
             <span>Nivel Intermedio</span>
           </div>
         </div>
 
         <div
           style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }}
-          className="about-desc bg-[#334b5370] p-8 rounded-lg shadow-lg"
+          className="flex flex-col gap-5 bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5 text-[#bbb197]"
         >
-          <p>
-            Comprometido con la creación de interfaces y experiencias digitales
-            que conecten con los usuarios y resuelvan problemas de forma
-            efectiva. Mi enfoque se basa en la experiencia de usuario, la
-            simplicidad y la eficiencia en la diseño.
-          </p>
           <p>
             Me formé como Analista Programador, especializado en el Frontend en
             Santiago de Chile. Estudié en Duoc UC, donde aprendi las distintas

@@ -30,26 +30,29 @@ export const Education = () => {
         <h1 className="text-xl md:text-4xl sm:text-2xl">Educación</h1>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-3 text-[#b8b7b7] max-w-7xl mx-auto">
+      <div className="flex flex-col lg:flex-row gap-3 text-[#bbb197] max-w-7xl mx-auto">
         <div className="flex flex-col gap-5">
-          {education.map(({ date, company, position, logo, maxWidth, maxHeight }) => (
-            <div
-              className="flex flex-col gap-3 bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5"
-              key={date}
-            >
-              <div className="flex flex-col gap-1">
-                <h1 className="font-bold text-xl">{position}</h1>
-                <h3>{company}</h3>
-                <h6 className="text-sm">{date}</h6>
+          {education.map(
+            ({ date, company, position, logo, maxWidth, maxHeight }) => (
+              <div
+                style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }}
+                className="flex flex-col gap-3 bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5"
+                key={date}
+              >
+                <div className="flex flex-col gap-1">
+                  <h1 className="font-bold text-xl">{position}</h1>
+                  <h3>{company}</h3>
+                  <h6 className="text-sm">{date}</h6>
+                </div>
+                <ImageComponent
+                  src={logo}
+                  alt={`${company} Logo`}
+                  maxWidth={maxWidth}
+                  maxHeight={maxHeight}
+                />
               </div>
-              <ImageComponent
-                src={logo}
-                alt={`${company} Logo`}
-                maxWidth={maxWidth}
-                maxHeight={maxHeight}
-              />
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </section>

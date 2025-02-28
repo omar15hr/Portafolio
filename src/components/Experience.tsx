@@ -70,7 +70,11 @@ export function Experience() {
 
       <div className="flex flex-col gap-5 w-full max-w-5xl mx-auto p-5">
         {experience.map(({ date, company, position, workDone, stack }) => (
-          <div className="bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5" key={company}>
+          <div
+            style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }}
+            className="bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5"
+            key={company}
+          >
             <div className="flex flex-col gap-2">
               <span className="text-[#F2A365]">{date}</span>
               <h3 className="card-position text-2xl font-bold">{position}</h3>

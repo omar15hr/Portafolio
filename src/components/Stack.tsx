@@ -41,9 +41,17 @@ export function Stack() {
 
       <div className="flex flex-wrap gap-6 items-center justify-center p-5">
         {stackItems.map(({ Component, name, props }, index) => (
-          <div className="flex flex-col gap-2 items-center justify-center" key={index}>
+          <div
+            className="flex flex-col gap-2 items-center justify-center"
+            key={index}
+          >
             <Component size={50} {...props} />
-            <span className='text-xs md:text-sm sm:text-sm shadow-xl bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-2'>{name}</span>
+            <span
+              style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }}
+              className="text-xs md:text-sm sm:text-sm shadow-xl bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-2"
+            >
+              {name}
+            </span>
           </div>
         ))}
       </div>

@@ -73,6 +73,7 @@ export function Projects() {
       <div className="flex flex-col gap-5 w-full max-w-5xl mx-auto p-2">
         {projects.map((project) => (
           <div
+            style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }}
             key={project.name}
             className="flex flex-col sm:flex-row flex-wrap gap-6 text-xs md:text-sm bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-4 shadow-xl"
           >
