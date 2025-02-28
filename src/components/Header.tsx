@@ -15,7 +15,7 @@ export function Header() {
           className="w-24 h-24 rounded-full"
         />
       <div className="flex flex-col gap-2">
-        <div className="md:text-6xl sm:text-4xl text-[#F5E8C7]">
+        <div className="md:text-6xl sm:text-4xl text-xl text-[#F5E8C7]">
           Omar Hernández
         </div>
         <div className="md:text-3xl sm:text-xl text-[#F2A365]">

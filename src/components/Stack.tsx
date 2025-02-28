@@ -13,7 +13,6 @@ import Prisma from "../assets/svg/stack/Prisma";
 import { React } from "../assets/svg/stack/React";
 import { Tailwind } from "../assets/svg/stack/Tailwind";
 import { TypeScript } from "../assets/svg/stack/TypeScript";
-import "./Stack.css";
 
 const stackItems = [
   { Component: Html, name: "Html" },
@@ -34,17 +33,17 @@ const stackItems = [
 
 export function Stack() {
   return (
-    <section className="stack-container" id="stack">
-      <div className="flex flex-row items-center justify-center gap-2 title-stack md:text-5xl sm:text-4xl">
+    <section className="mt-20 text-[#F5E8C7]" id="stack">
+      <div className="flex flex-row items-center justify-center gap-2 mb-5 md:text-5xl sm:text-4xl">
         <Code size={50} />
-        <span>Stack</span>
+        <span className="text-xl md:text-4xl sm:text-2xl">Stack</span>
       </div>
 
-      <div className="stack-list">
+      <div className="flex flex-wrap gap-6 items-center justify-center p-5">
         {stackItems.map(({ Component, name, props }, index) => (
-          <div className="stack-item" key={index}>
+          <div className="flex flex-col gap-2 items-center justify-center" key={index}>
             <Component size={50} {...props} />
-            <span className='item-stack-name'>{name}</span>
+            <span className='text-xs md:text-sm sm:text-sm bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-2'>{name}</span>
           </div>
         ))}
       </div>
