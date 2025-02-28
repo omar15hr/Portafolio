@@ -33,7 +33,7 @@ const stackItems = [
 
 export function Stack() {
   return (
-    <section className="mt-20 text-[#F5E8C7]" id="stack">
+    <section className="flex flex-col mt-20 text-[#F5E8C7]" id="stack">
       <div className="flex flex-row items-center justify-center gap-2 mb-5 md:text-5xl sm:text-4xl">
         <Code size={50} />
         <span className="text-xl md:text-4xl sm:text-2xl">Stack</span>

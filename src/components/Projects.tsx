@@ -1,4 +1,3 @@
-import { CodeSVG } from "../assets/svg/projects/CodeSVG";
 import { Css } from "../assets/svg/stack/Css";
 import { Express } from "../assets/svg/stack/Express";
 import { Git } from "../assets/svg/stack/Git";
@@ -10,26 +9,24 @@ import { PostgreSQL } from "../assets/svg/stack/PostgreSQL";
 import { React } from "../assets/svg/stack/React";
 import { Tailwind } from "../assets/svg/stack/Tailwind";
 import { TypeScript } from "../assets/svg/stack/TypeScript";
-import { ExternalLink } from "../assets/svg/projects/ExternalLink";
 
 import muscari from "../assets/img/projects/muscari.webp";
 import backgroundSnippets from "../assets/img/projects/background-snippet.webp";
 
-import "./Projects.css";
-import { Box } from "../assets/svg/Icons";
+import { Box, CodeSVG, ExternalLink } from "../assets/svg/Icons";
 
 const stackIcons: Record<string, JSX.Element> = {
-  React: <React size={18} />,
-  TypeScript: <TypeScript size={18} />,
-  CSS: <Css size={18} />,
-  HTML: <Html size={18} />,
-  "Next Js": <Nextjs size={18} props={{ fill: "#fff" }} />,
-  TailwindCSS: <Tailwind size={18} />,
-  PostgreSQL: <PostgreSQL size={18} />,
-  Github: <GithubStack size={18} />,
-  Git: <Git size={18} />,
-  Express: <Express size={18} />,
-  JavaScript: <JavaScript size={18} />,
+  React: <React size={24} />,
+  TypeScript: <TypeScript size={24} />,
+  CSS: <Css size={24} />,
+  HTML: <Html size={24} />,
+  "Next Js": <Nextjs size={24} props={{ fill: "#fff" }} />,
+  TailwindCSS: <Tailwind size={24} />,
+  PostgreSQL: <PostgreSQL size={24} />,
+  Github: <GithubStack size={24} />,
+  Git: <Git size={24} />,
+  Express: <Express size={24} />,
+  JavaScript: <JavaScript size={24} />,
 };
 
 const projects = [
@@ -69,34 +66,56 @@ const projects = [
 
 export function Projects() {
   return (
-    <section className="projects-container" id="projects">
-      <div className="flex flex-row gap-2 items-center justify-center title-projects md:text-5xl sm:text-4xl text-center">
+    <section className="flex flex-col gap-3 mt-20 text-[#F5E8C7]" id="projects">
+      <div className="flex flex-row gap-2 items-center justify-center md:text-5xl sm:text-4xl text-center">
         <Box size={50} />
-        <span>Mis Proyectos</span>
+        <span className="text-xl md:text-4xl sm:text-2xl">Mis Proyectos</span>
       </div>
-      <p className="projects-description text-xl text-center">
+      <p className="md:text-xl sm:text-xl text-[#bbb197] text-center p-5">
         Proyectos que muestran mis capacidades y conocimientos en el desarrollo
         de aplicaciones web.
       </p>
 
       <div className="flex flex-col gap-5 w-full max-w-5xl mx-auto p-2">
-        {projects.map((project) => (
-          <div key={project.name} className="flex flex-row gap-6">
-            <img src={project.image} alt={project.name} className="w-[400px] rounded-md" />
-            <div className="flex flex-col gap-4">
-              <h1 className="text-2xl text-[#F4A261]">{project.name}</h1>
-              <div className="flex flex-row gap-2 items-center">
-              {project.stack.map((stack) => (
-                  <div className="stack-item-project" key={stack}>
-                    {stackIcons[stack] || stack} {stack}
-                  </div>
-                ))}
-              </div>
-              <p className="text-sm text-[#eff6e0]">{project.description}</p>
+  {projects.map((project) => (
+    <div
+      key={project.name}
+      className="flex flex-col sm:flex-row flex-wrap gap-6 text-xs md:text-sm bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-4"
+    >
+      <img
+        src={project.image}
+        alt={project.name}
+        className="w-full sm:w-[200px] md:w-[300px] lg:w-[400px] rounded-md object-cover"
+      />
+
+      <div className="flex flex-col gap-4 flex-1">
+        <h1 className="text-2xl text-[#F4A261] font-bold">{project.name}</h1>
+
+        <div className="flex flex-wrap gap-2 items-center">
+          {project.stack.map((stack) => (
+            <div
+              className="flex flex-col gap-2 items-center justify-center"
+              key={stack}
+            >
+              {stackIcons[stack] || stack} 
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <p className="text-sm text-[#eff6e0]">{project.description}</p>
+
+        <div className="flex gap-4">
+          <a href={project.code} target="_blank" className="p-2 bg-[#F4A261] bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-all">
+            <CodeSVG size={20} />
+          </a>
+          <a href={project.url} target="_blank" className="p-2 bg-[#F4A261] bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-all">
+            <ExternalLink size={20} />
+          </a>
+        </div>
       </div>
+    </div>
+  ))}
+</div>
     </section>
   );
 }
