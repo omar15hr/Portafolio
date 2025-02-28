@@ -43,7 +43,7 @@ export function Stack() {
         {stackItems.map(({ Component, name, props }, index) => (
           <div className="flex flex-col gap-2 items-center justify-center" key={index}>
             <Component size={50} {...props} />
-            <span className='text-xs md:text-sm sm:text-sm bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-2'>{name}</span>
+            <span className='text-xs md:text-sm sm:text-sm shadow-xl bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-2'>{name}</span>
           </div>
         ))}
       </div>

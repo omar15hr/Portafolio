@@ -37,13 +37,7 @@ const projects = [
     image: backgroundSnippets,
     url: "https://background-snippets-two.vercel.app",
     code: "https://github.com/omar15hr/background-snippets",
-    stack: [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "Github",
-      "Git",
-    ],
+    stack: ["React", "TypeScript", "TailwindCSS", "Github", "Git"],
   },
   {
     name: "Muscari Clothing",
@@ -77,45 +71,55 @@ export function Projects() {
       </p>
 
       <div className="flex flex-col gap-5 w-full max-w-5xl mx-auto p-2">
-  {projects.map((project) => (
-    <div
-      key={project.name}
-      className="flex flex-col sm:flex-row flex-wrap gap-6 text-xs md:text-sm bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-4"
-    >
-      <img
-        src={project.image}
-        alt={project.name}
-        className="w-full sm:w-[200px] md:w-[300px] lg:w-[400px] rounded-md object-cover"
-      />
+        {projects.map((project) => (
+          <div
+            key={project.name}
+            className="flex flex-col sm:flex-row flex-wrap gap-6 text-xs md:text-sm bg-[#3d3d3d] bg-opacity-30 rounded-xl backdrop-blur-lg p-4 shadow-xl"
+          >
+            <img
+              src={project.image}
+              alt={project.name}
+              className="w-full sm:w-[200px] md:w-[300px] lg:w-[400px] rounded-md object-cover"
+            />
 
-      <div className="flex flex-col gap-4 flex-1">
-        <h1 className="text-2xl text-[#F4A261] font-bold">{project.name}</h1>
+            <div className="flex flex-col gap-4 flex-1">
+              <h1 className="text-2xl text-[#F4A261] font-bold">
+                {project.name}
+              </h1>
 
-        <div className="flex flex-wrap gap-2 items-center">
-          {project.stack.map((stack) => (
-            <div
-              className="flex flex-col gap-2 items-center justify-center"
-              key={stack}
-            >
-              {stackIcons[stack] || stack} 
+              <div className="flex flex-wrap gap-2 items-center">
+                {project.stack.map((stack) => (
+                  <div
+                    className="flex flex-col gap-2 items-center justify-center"
+                    key={stack}
+                  >
+                    {stackIcons[stack] || stack}
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-sm text-[#eff6e0]">{project.description}</p>
+
+              <div className="flex gap-4">
+                <a
+                  href={project.code}
+                  target="_blank"
+                  className="p-2 bg-[#F4A261] bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-all"
+                >
+                  <CodeSVG size={20} />
+                </a>
+                <a
+                  href={project.url}
+                  target="_blank"
+                  className="p-2 bg-[#F4A261] bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-all"
+                >
+                  <ExternalLink size={20} />
+                </a>
+              </div>
             </div>
-          ))}
-        </div>
-
-        <p className="text-sm text-[#eff6e0]">{project.description}</p>
-
-        <div className="flex gap-4">
-          <a href={project.code} target="_blank" className="p-2 bg-[#F4A261] bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-all">
-            <CodeSVG size={20} />
-          </a>
-          <a href={project.url} target="_blank" className="p-2 bg-[#F4A261] bg-opacity-20 rounded-lg hover:bg-opacity-30 transition-all">
-            <ExternalLink size={20} />
-          </a>
-        </div>
+          </div>
+        ))}
       </div>
-    </div>
-  ))}
-</div>
     </section>
   );
 }
