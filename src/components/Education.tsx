@@ -2,7 +2,7 @@ import { Ballpen } from "../assets/svg/Icons";
 
 export const Education = () => {
   return (
-    <section className="p-8 max-w-screen-xl mx-auto" id="about">
+    <section className="p-8 max-w-screen-xl mx-auto" id="education">
       <div className="flex flex-row gap-2 items-center justify-center text-[#598392] mb-8">
         <Ballpen size={50} />
         <h1 className=" font-bold text-3xl sm:text-4xl md:text-5xl text-center">
