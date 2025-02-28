@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Baseline, X } from "../assets/svg/Icons";
-import "./Navbar.css";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
