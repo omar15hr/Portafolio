@@ -13,7 +13,7 @@ import {
 } from "../assets/svg/Icons";
 
 import muscari from "../assets/img/projects/muscari.webp";
-import backgroundSnippets from "../assets/img/projects/background-snippet.webp";
+import backgroundSnippets from "../assets/img/projects/background-snippets.webp";
 
 import { Box, CodeSVG, ExternalLink } from "../assets/svg/Icons";
 
