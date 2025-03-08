@@ -1,5 +1,4 @@
 import {
-  Briefcase,
   MySQL,
   Php,
   Css,
@@ -61,14 +60,15 @@ const stackIcons: Record<string, JSX.Element> = {
 function Experience() {
   return (
     <section
-      className="flex flex-col gap-3 mt-20 text-[#F5E8C7]"
+      className="flex flex-col gap-3 mt-20 text-[#0083C4]"
       id="experience"
     >
-      <div className="flex flex-row gap-2 items-center justify-center title-exp text-3xl sm:text-4xl md:text-5xl">
-        <Briefcase size={50} />
-        <span className="text-xl md:text-4xl sm:text-2xl">Experiencia</span>
+      <div className="flex flex-row gap-1 items-center justify-center title-exp text-3xl sm:text-4xl md:text-5xl">
+        <h1 className="luckiest text-[2.5rem] sm:text-[3.5rem] md:text-[5rem] text-center leading-tight md:leading-22 text-[#0083C4]">
+        Experiencia profesional
+      </h1>
       </div>
-      <p className="md:text-xl sm:text-xl text-[#bbb197] text-center p-5">
+      <p className="md:text-xl sm:text-xl text-[#f56835] text-center p-5">
         Experiencia profesional colaborando con empresas reales y desarrollando
         proyectos propios.
       </p>
@@ -76,12 +76,11 @@ function Experience() {
       <div className="flex flex-col gap-5 w-full max-w-5xl mx-auto p-5">
         {experience.map(({ date, company, position, workDone, stack }) => (
           <div
-            style={{ boxShadow: "1px 1px 10px rgba(255, 251, 251, 0.308)" }}
-            className="bg-[#3d3d3d] shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5"
+            className="bg-white/30 shadow-xl bg-opacity-30 rounded-xl backdrop-blur-lg p-5"
             key={company}
           >
             <div className="flex flex-col gap-2">
-              <span className="text-[#F2A365]">{date}</span>
+              <span className="text-[#0083C4]">{date}</span>
               <h3 className="card-position text-2xl font-bold">{position}</h3>
               <span className="text-[#E76F51] font-bold">{company}</span>
               <div className="p-5">

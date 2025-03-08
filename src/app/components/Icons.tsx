@@ -37,7 +37,7 @@ export function Briefcase({ size }: Props) {
       height={size}
       viewBox="0 0 24 24"
       fill="none"
-      stroke="currentColor"
+      stroke="#0083C4"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
