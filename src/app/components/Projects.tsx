@@ -11,11 +11,11 @@ function Projects() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
         <ProjectCard
-          title="Backgrounds Hub"
+          title="Backgrounds Snippets"
           description="Collection of modern, high quality backgrounds"
           image={backgroundSnippet}
           className="h-[300px] sm:h-[350px]"
-          href="https://backgroundshub.vercel.app/"
+          href="https://background-snippets-two.vercel.app"
         />
         <ComingSoonCard className="h-[300px] sm:h-[350px] hidden md:flex" />
         <ComingSoonCard className="h-[300px] sm:h-[350px] hidden md:flex" />
@@ -24,7 +24,7 @@ function Projects() {
           description="E-commerce con sistema de autenticación, envío de correos electrónicos y pasarela de pagos."
           image={muscari}
           className="h-[300px] sm:h-[350px] md:h-full md:col-span-1 lg:col-span-1"
-          href="https://skeleton-loader-generator.vercel.app/"
+          href="https://muscari.vercel.app"
         />
 
         <div className="flex-col gap-4 md:gap-6 md:col-span-1 lg:col-span-1 hidden md:flex">

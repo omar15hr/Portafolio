@@ -40,6 +40,13 @@ export function HeroSection() {
               >
                 Github
               </Link>
+              <Link
+                href="https://drive.google.com/file/d/157fio2mBOKRRJVFwKBLbK-02i7VbS2ol/view?usp=sharing"
+                target="_blank"
+                className="bg-gradient-to-l text-white from-red-400 to-red-500 roboto px-4 md:px-5 py-3 rounded-full font-bold text-md md:text-md cursor-pointer"
+              >
+                CV
+              </Link>
             </div>
           </div>
           <Image
