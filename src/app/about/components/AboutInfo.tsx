@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import muscari from "@/app/assets/img/projects/muscari.webp";
 import duoc from "@/app/assets/img/education/duoc.png";
+import onePiece from '@/app/assets/onepiece.gif';
 
 function AboutInfo() {
   return (
@@ -37,11 +37,6 @@ function AboutInfo() {
                 </p>
               </div>
             </div>
-            <Image
-              src={muscari}
-              alt="Jinwoo"
-              className="absolute bottom-0 right-0 w-24 md:w-23"
-            />
           </div>
           <div className="bg-white/30 backdrop-blur-sm w-full md:w-3/5 h-[250px] md:h-[300px] rounded-lg relative">
             <div className="flex flex-col p-4">
@@ -55,11 +50,6 @@ function AboutInfo() {
                 diferencia en el mundo de la tecnología con mi propio estilo.
               </p>
             </div>
-            <Image
-              src={muscari}
-              alt="Gojo"
-              className="absolute bottom-0 left-0 w-24 md:w-12"
-            />
           </div>
         </div>
       </div>
@@ -83,9 +73,9 @@ function AboutInfo() {
           </p>
         </div>
         <Image
-          src={muscari}
+          src={onePiece}
           alt="Social"
-          className="w-full md:max-w-[300px] mx-auto lg:max-w-none"
+          className="w-full md:max-w-[300px] mx-auto lg:max-w-none rounded-2xl opacity-10"
         />
       </Link>
     </section>
