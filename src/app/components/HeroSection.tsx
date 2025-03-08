@@ -45,6 +45,7 @@ export function HeroSection() {
           <Image
           src={editor}
           alt="Editor"
+          priority
           className="w-full lg:w-1/2 lg:absolute lg:right-[-20px] lg:top-[150px] transition-transform duration-300 group-hover:-translate-y-2 lg:group-hover:-translate-x-2"
         />
         </div>

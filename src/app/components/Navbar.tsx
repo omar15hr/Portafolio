@@ -8,17 +8,17 @@ const navItems = [
   {
     label: "Inicio",
     href: "/#home",
-    isHash: false,
+    isHash: true,
+  },
+  {
+    label: "Proyectos",
+    href: "/#projects",
+    isHash: true,
   },
   {
     label: "Experiencia",
     href: "/experience",
     isHash: false,
-  },
-  {
-    label: "Proyectos",
-    href: "/#proyectos",
-    isHash: true,
   },
   {
     label: "Sobre mi",
@@ -36,7 +36,7 @@ function NavBar() {
     const handleScroll = () => {
       if (pathname !== "/") return;
 
-      const sections = ["home", "proyectos"];
+      const sections = ["home", "projects"];
       const viewportMiddle = window.innerHeight * 0.4;
       let closestSection = "";
       let minDistance = Infinity;
@@ -115,7 +115,7 @@ function NavBar() {
     
     if (item.isHash) {
       if (pathname === "/") {
-        if (item.href === "/#work" && !activeSection) return true;
+        if (item.href === "/#home" && !activeSection) return true;
         return activeSection === item.href.substring(2);
       }
       return false;

@@ -5,7 +5,7 @@ import backgroundSnippet from '@/app/assets/img/projects/background-snippets.web
 function Projects() {
   return (
     <section className="container mx-auto px-4 py-10 md:py-20">
-      <h1 className="acorn text-[2.5rem] sm:text-[3.5rem] md:text-[5rem] font-bold text-center mb-8 md:mb-16 text-[#0083C4]">
+      <h1 className="luckiest text-[2.5rem] sm:text-[3.5rem] md:text-[5rem] text-center mb-8 md:mb-16 text-[#0083C4]">
         Proyectos
       </h1>
 

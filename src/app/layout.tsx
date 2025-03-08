@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import "@fontsource/rammetto-one";
-import "./globals.css";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
+
+import "@fontsource/rammetto-one";
+import '@fontsource/luckiest-guy';
+
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-lt-installed="true" cz-shortcut-listen="true">
       <body
+       cz-shortcut-listen="true"
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
