@@ -8,11 +8,11 @@ const navItems = [
   {
     label: "Inicio",
     href: "/#home",
-    isHash: true,
+    isHash: false,
   },
   {
     label: "Experiencia",
-    href: "/#experience",
+    href: "/experience",
     isHash: false,
   },
   {
