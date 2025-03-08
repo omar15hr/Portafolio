@@ -14,28 +14,20 @@ function Projects() {
           title="Backgrounds Snippets"
           description="Collection of modern, high quality backgrounds"
           image={backgroundSnippet}
-          className="h-[300px] sm:h-[350px]"
+          className="h-[350px] sm:h-[400px]"
+          stack={["React", "TypeScript", "CSS", "HTML", "TailwindCSS", "Github", "Git"]}
           href="https://background-snippets-two.vercel.app"
         />
-        <ComingSoonCard className="h-[300px] sm:h-[350px] hidden md:flex" />
-        <ComingSoonCard className="h-[300px] sm:h-[350px] hidden md:flex" />
         <ProjectCard
           title="Muscari Clothing"
           description="E-commerce con sistema de autenticación, envío de correos electrónicos y pasarela de pagos."
           image={muscari}
-          className="h-[300px] sm:h-[350px] md:h-full md:col-span-1 lg:col-span-1"
+          className="h-[350px] sm:h-[400px]"
+          stack={["React", "TypeScript", "CSS", "HTML", "TailwindCSS", "Nextjs", "PostgreSQL", "Github", "Git"]}
           href="https://muscari.vercel.app"
         />
-
-        <div className="flex-col gap-4 md:gap-6 md:col-span-1 lg:col-span-1 hidden md:flex">
-          <ComingSoonCard className="h-[300px] sm:h-[350px]" />
-          <ComingSoonCard className="h-[180px] sm:h-[200px]" />
-        </div>
-
-        <div className="flex-col gap-4 md:gap-6 md:col-span-1 lg:col-span-1 hidden md:flex">
-          <ComingSoonCard className="h-[250px] sm:h-[300px]" />
-          <ComingSoonCard className="h-[230px] sm:h-[250px]" />
-        </div>
+        <ComingSoonCard className="h-[300px] sm:h-[350px] hidden md:flex" />
+        <ComingSoonCard className="h-[300px] sm:h-[350px] hidden md:flex" />       
       </div>
     </section>
   );

@@ -1,4 +1,18 @@
 import Image, { StaticImageData } from "next/image";
+import {
+  Css,
+  Express,
+  Git,
+  GithubStack,
+  Html,
+  JavaScript,
+  Nextjs,
+  PostgreSQL,
+  ReactSVG,
+  Tailwind,
+  TypeScript,
+} from "./Icons";
+import { JSX } from "react";
 
 interface ProjectCardProps {
   title: string;
@@ -6,6 +20,7 @@ interface ProjectCardProps {
   image: StaticImageData;
   className?: string;
   href?: string;
+  stack?: string[];
 }
 
 export function ProjectCard({
@@ -14,15 +29,32 @@ export function ProjectCard({
   image,
   className = "",
   href,
+  stack,
 }: ProjectCardProps) {
-  const CardWrapper = href ? 'a' : 'div';
-  
+  const CardWrapper = href ? "a" : "div";
+
+  const stackIcons: Record<string, JSX.Element> = {
+    React: <ReactSVG size={24} />,
+    TypeScript: <TypeScript size={24} />,
+    CSS: <Css size={24} />,
+    HTML: <Html size={24} />,
+    Nextjs: <Nextjs size={24} props={{ fill: "#fff" }} />,
+    TailwindCSS: <Tailwind size={24} />,
+    PostgreSQL: <PostgreSQL size={24} />,
+    Github: <GithubStack size={24} />,
+    Git: <Git size={24} />,
+    Express: <Express size={24} />,
+    JavaScript: <JavaScript size={24} />,
+  };
+
   return (
     <CardWrapper
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`bg-white/30 p-4 sm:p-6 md:p-10 relative overflow-hidden rounded-lg shadow-md roboto border border-white/20 transition-all duration-300 hover:shadow-lg will-change-transform hover:-translate-y-1 ${className} ${href ? 'cursor-pointer' : ''}`}
+      className={`bg-white/30 p-4 sm:p-6 md:p-10 relative overflow-hidden rounded-lg shadow-md roboto border border-white/20 transition-all duration-300 hover:shadow-lg will-change-transform hover:-translate-y-1 ${className} ${
+        href ? "cursor-pointer" : ""
+      }`}
     >
       <div className="flex flex-col gap-2 relative z-10">
         <h2 className="text-[#0083C4] text-lg sm:text-xl md:text-2xl font-bold">
@@ -30,8 +62,22 @@ export function ProjectCard({
         </h2>
         <p className="text-xs sm:text-sm md:text-base">{description}</p>
       </div>
-      <div className="absolute bottom-[-30px] px-3 sm:px-5 left-0 w-full flex justify-center">
-        <Image className="h-[200px] md:h-full sm:w-48 md:w-full mt-4" src={image} alt={title} />
+      <div className="flex flex-wrap gap-4 items-center mt-4">
+        {stack?.map((stack) => (
+          <div
+            className="flex flex-col gap-2 items-center justify-center"
+            key={stack}
+          >
+            {stackIcons[stack] || stack}
+          </div>
+        ))}
+      </div>
+      <div className="absolute bottom-[-5px] px-3 sm:px-5 left-0 w-full flex justify-center">
+        <Image
+          className="h-[200px] md:h-full sm:w-48 md:w-full mt-4 rounded-md"
+          src={image}
+          alt={title}
+        />
       </div>
       <div className="absolute inset-0 backdrop-blur-sm -z-10" />
     </CardWrapper>
@@ -91,4 +137,3 @@ export function ComingSoonCard({ className = "" }: { className?: string }) {
     </div>
   );
 }
-
