@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import '@fontsource/rammetto-one';
+import "@fontsource/rammetto-one";
 import "./globals.css";
 import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,15 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html 
-      lang="en"
-      data-lt-installed="true"
-    >
+    <html lang="en" data-lt-installed="true" cz-shortcut-listen="true">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
