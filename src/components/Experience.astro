@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Noviembre 2024 - Febrero 2025",
+    title: "Desarrollador Front-end",
+    company: "Fortius",
+    description:
+      "Desarrollé la lógica del carrito de compras, incluyendo la integración y validación de cupones de descuento para optimizar la conversión de ventas. Implementé interacciones dinámicas como carruseles, modales y botones para mejorar la usabilidad y navegación del sitio.",
+  },
+  {
+    date: "Agosto 2024 - Noviembre 2024",
+    title: "Desarrollador Front-end",
+    company: "Dyatec",
+    description:
+      "Responsable del desarrollo de landings, componentes y utilidades para la creación y desarrollo de aplicaciones web. Desarrollé y personalicé plugins y bloques en Moodle, utilizando PHP, JavaScript y CSS para mejorar la funcionalidad de varios sitios web.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
