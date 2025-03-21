@@ -1,0 +1,43 @@
+---
+import CertificationItem from "./CertificationItem.astro"
+const EXPERIENCE = [
+  {
+    instructor: "Fernando Herrera",
+    title: "NodeJS: De cero a experto",
+    company: "Udemy",
+    description:
+      "Desarrollé la lógica del carrito de compras, incluyendo la integración y validación de cupones de descuento para optimizar la conversión de ventas. Implementé interacciones dinámicas como carruseles, modales y botones para mejorar la usabilidad y navegación del sitio.",
+  },
+  {
+    instructor: "Fernando Herrera",
+    title: "Next.js: El framework de React para producción",
+    company: "Udemy",
+    description:
+      "Además de aprender a crear aplicaciones web con Next.js, desarrollé una tienda electrónica con cobros, mantenimientos, carga, optimizaciones para SEO y la desplegué a producción.",
+  },
+  {
+    instructor: "Fernando Herrera",
+    title: "React PRO: Lleva tus bases al siguiente nivel",
+    company: "Udemy",
+    description:
+      "Aprendí el uso de TypeScript en React, patrones de diseño para el front-end, componentes de React, hooks, funciones de orden superior, contextos y más.",
+  },
+  {
+    instructor: "Fernando Herrera",
+    title: "React: De cero a experto ( Hooks y MERN )",
+    company: "Udemy",
+    description:
+      "Dentro del curso realicé varias aplicaciones que van desde aplicaciones de consola, receptores de webhooks, Restful API endpoints, autenticación, web sockets y más, trabajando con TypeScript y patrones de desarrollo para escribir código de calidad.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <CertificationItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

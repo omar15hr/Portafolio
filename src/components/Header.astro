@@ -13,6 +13,11 @@ const navItems = [
     url: "/#proyectos",
   },
   {
+    title: "Certificaciones",
+    label: "certificaciones",
+    url: "/#certificaciones",
+  },
+  {
     title: "Sobre mí",
     label: "sobre-mi",
     url: "/#sobre-mi",
@@ -28,7 +33,7 @@ const navItems = [
 <header
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
-  <nav class="flex dark:bg-white/30 bg-black/30 px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center">
+  <nav class="flex dark:bg-white/30 bg-black/30 px-3 text-xs font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center">
     {
       navItems.map((link) => (
         <a
